@@ -5,6 +5,8 @@
 #include "common/system_state/system_state.h"
 #include "common/utility/logger.h"
 #include "common/objects/potential.h"
+#include "common/bspline/bspline.h"
+#include "objects/potentials/coulomb/coulomb_pot.h"
 
 #include <string>
 #include <sstream>
@@ -25,11 +27,52 @@ void tise::TISE::ComputeAndOutputContinuumStates(int nmax, Matrix H0, Matrix S, 
     auto& values = _eigensolver->GetEigenValues();
     auto& vectors = _eigensolver->GetEigenVectors();
 
+
+
     // find the last negative eigenvalue
     int firstPositiveEigenvalue = 0;
     for (firstPositiveEigenvalue = 0; firstPositiveEigenvalue < values.size(); firstPositiveEigenvalue++)
         if (std::real(values[firstPositiveEigenvalue]) >= 0)
             break;
+
+    // choose a normalization
+    if (_continuum_normalization == ContinuumNormalization::MAX) {
+        maths::Vector temp = maths::Factory::CreateVector(vectors[0]->Length());
+
+        for (int j = firstPositiveEigenvalue; j < values.size(); j++) {
+            auto& v = vectors[j];
+            temp->Copy(v);
+            temp->Abs();
+            double max = temp->Max();
+            v->Scale(1./max);
+        }
+    } else if (_continuum_normalization == ContinuumNormalization::ASYMPTOTICALLY_ONE) {
+        // we choose an Rvalue near the edge of the box
+        double r = bspline::Basis::GetXmax()*.95;
+        std::vector<maths::complex> fc(vectors[0]->Length());
+        double Z = 0;
+        for (auto& p : _potentials)
+            if (p->Name() == CoulombPotential::GetName())
+                Z += std::dynamic_pointer_cast<CoulombPotential>(p)->Z();
+                
+
+        for (int j = firstPositiveEigenvalue; j < values.size(); j++) {
+            double k = std::sqrt(2.*std::real(values[j]));
+            auto& v = vectors[j];
+            v->CopyTo(fc);
+            
+            maths::complex phi = bspline::Basis::FunctionEvaluate(r, fc);
+            maths::complex dphi = bspline::Basis::FunctionEvaluate(r, fc, 1);
+
+            double A = std::sqrt(
+                std::abs(phi)*std::abs(phi) + 
+                std::abs(dphi / (k + Z/(k*r))) *
+                std::abs(dphi / (k + Z/(k*r)))
+            );
+
+            v->Scale(1./A);
+        }
+    }
 
     // ----------- output eigen values
     for (int j = firstPositiveEigenvalue; j < values.size(); j++) {

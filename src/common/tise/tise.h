@@ -12,6 +12,11 @@
 
 namespace tise {
     class TISE {
+        enum class ContinuumNormalization {
+            BOX,
+            MAX,
+            ASYMPTOTICALLY_ONE                      // not yet implemented
+        };
     protected:
         void AddPotential(tdse::Potential::Ptr_t p);
 
@@ -32,6 +37,7 @@ namespace tise {
         bool _ecs_on;
         double _tol;
         maths::EigenSolver _eigensolver;
+        ContinuumNormalization _continuum_normalization;
 
 
         void ComputeAndOutputBoundStates(int nmax, maths::Matrix H0, maths::Matrix S, int l = -1);

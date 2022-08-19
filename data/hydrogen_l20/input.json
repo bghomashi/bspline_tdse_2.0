@@ -11,20 +11,21 @@
         "order": 8,
         "node_sequence": "parabolic",
         "parameter": 30,
-        "num_nodes": 200,
+        "num_nodes": 900,
         "x_min": 0.0,
-        "x_max": 100.0,
-        "lmax": 10,
-        "mmax": 10,
+        "x_max": 300.0,
+        "lmax": 20,
+        "mmax": 20,
         "ecs_r0": 1.0
     },
     "lasers": [
         {
-            "num_cycles": 5.0,
+            "num_cycles": 20.0,
             "cycles_delay": 0.0,
             "envelope": "sin2",
-            "intensity": 1e14,
-            "wavelength": 200,
+            "intensity": 1.4e14,
+            "wavelength": 400,
+            "ellipticity" : 0.85,
             "cep": 0,
             "polarization_vector": [
                	0.0,
@@ -72,7 +73,10 @@
         "potential": {
             "grid_points" : 1000,
             "filename" : "potential.txt"
-        }
+        },
+	    "ionization": {
+            "filename" : "ionization.txt" 
+	}
     },
     "eigen_state": {
         "solver": "SLEPC",
@@ -83,8 +87,37 @@
             "nmax": 4
         },
         "continuum": {
-            "nmax": 100,
-            "lmax": 10
+            "nmax": 400,
+            "lmax": 20,
+            "normalization" : "asymp"
+        }
+    },
+    "ionization": {
+        "angularly_resolved": {
+            "filename" : "angularly-resolved.txt",
+            "x" : {
+                "min": -1,
+                "max": 1,
+                "step": 0.005
+            },
+            "z" : {
+                "min": -1,
+                "max": 1,
+                "step": 0.005
+            },
+            "energy" : {
+                "min" : 0.004,
+                "max" : 1.0,
+                "step" : 0.05
+            }
+        },
+        "energy_resolved": {
+            "filename" : "energy-resolved.txt",
+            "energy" : {
+                "min" : 0.004,
+                "max" : 1.0,
+                "step" : 0.01
+            }
         }
     },
     "log_filename": "log.txt"

@@ -33,6 +33,7 @@ namespace tdse {
             return _isAxial;
         }
 
+        virtual const std::string Name() const = 0;
         virtual double operator() (double x, double y, double z) const = 0;
         virtual void FillMatrix(maths::Matrix m, int N, const std::vector<int>& Ms = {0}, const std::vector<int>& mRows = {0}) = 0;
 

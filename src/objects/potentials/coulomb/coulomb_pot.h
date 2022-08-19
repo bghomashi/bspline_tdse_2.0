@@ -30,13 +30,16 @@ class CoulombPotential : public tdse::Potential::Register<CoulombPotential> {
 public:
     CoulombPotential();
 
-
+    inline double Z() const {
+        return _Z;
+    }
     double operator() (double x, double y, double z) const;
     void FillMatrix(maths::Matrix m, int N, const std::vector<int>& Ms = {0}, const std::vector<int>& mRows = {0});
     void FillMatrixGradX(maths::Matrix m, int N, int lmax, const std::vector<int>& Ms = {0}, const std::vector<int>& mRows = {0});
     void FillMatrixGradY(maths::Matrix m, int N, int lmax, const std::vector<int>& Ms = {0}, const std::vector<int>& mRows = {0});
     void FillMatrixGradZ(maths::Matrix m, int N, int lmax, const std::vector<int>& Ms = {0}, const std::vector<int>& mRows = {0});
 
+    const std::string Name() const;
     static std::string GetName();
     static tdse::Potential::Ptr_t Create(const nlohmann::json& observable);
     static bool Validate(const nlohmann::json& observable);

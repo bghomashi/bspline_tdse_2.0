@@ -122,6 +122,10 @@ void CoulombPotential::FillBlock( int l1, int m1, int l2, int m2,
 std::string CoulombPotential::GetName() {
     return "coulomb";
 }
+
+const std::string CoulombPotential::Name() const {
+    return GetName();
+}
 Potential::Ptr_t CoulombPotential::Create(const nlohmann::json& pot_term) {
     auto coulomb_pot = new CoulombPotential();
 

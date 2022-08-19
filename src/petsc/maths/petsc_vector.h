@@ -51,8 +51,10 @@ public:
     void AYPX(maths::complex a, const maths::Vector X);
     void AXPY(maths::complex a, const maths::Vector X);
     void Dot(const maths::Vector b, maths::complex& value) const;
-
-
+    double Max() const;
+    double Min() const;
+    void Abs();
+    
     void AssembleBegin();
     void AssembleEnd();
 

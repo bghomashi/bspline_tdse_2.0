@@ -41,7 +41,7 @@ void YukawaPotential::BuildExpInvR(int N, double Z, double D, BandedMatrix& invR
 
     invR = BandedMatrix(N, 2*order-1);
     for (int i = 0; i < N; i++) {
-        for (int j = i; j < N; j++) {
+        for (int j = i; j < std::min(N, i+order); j++) {
             invR(i, j) = invR(j, i) = bspline::Basis::Integrate(i+1, j+1, [Z,D] (complex r) -> complex {
                 return (-Z/r)*std::exp(-D*r);
             });
@@ -53,7 +53,7 @@ void YukawaPotential::BuildExpInvRR(int N, double Z, double D, BandedMatrix& inv
 
     invRR = BandedMatrix(N, 2*order-1);
     for (int i = 0; i < N; i++) {
-        for (int j = i; j < N; j++) {
+        for (int j = i; j < std::min(N, i+order); j++) {
             invRR(i, j) = invRR(j, i) = bspline::Basis::Integrate(i+1, j+1, [Z,D] (complex r) -> complex {
                 return (Z/r/r)*std::exp(-D*r);
             });
@@ -86,6 +86,9 @@ void YukawaPotential::FillBlock( int l1, int m1, int l2, int m2,
 }
 
 
+const std::string YukawaPotential::Name() const {
+    return GetName();
+}
 std::string YukawaPotential::GetName() {
     return "yukawa";
 }

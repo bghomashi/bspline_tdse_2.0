@@ -38,8 +38,10 @@ void ExponentialPotential::FillMatrix(Matrix m, int N, const std::vector<int>& M
 
 // utility functions
 void ExponentialPotential::BuildExpR(int N, double Z, double D, BandedMatrix& expR) {
+    int order = bspline::Basis::GetOrder();
+    
     for (int i = 0; i < N; i++) {
-        for (int j = i; j < N; j++) {
+        for (int j = i; j < std::min(N, i+order); j++) {
             expR(i, j) = expR(j, i) = bspline::Basis::Integrate(i+1, j+1, [Z,D] (complex r) -> complex {
                 return -Z*std::exp(-D*r);
             });
@@ -71,6 +73,9 @@ void ExponentialPotential::FillBlock( int l1, int m1, int l2, int m2,
 }
 
 
+const std::string ExponentialPotential::Name() const {
+    return GetName();
+}
 std::string ExponentialPotential::GetName() {
     return "exponential";
 }

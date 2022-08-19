@@ -37,6 +37,7 @@ void PetscVector::Set(int index, complex value) {
     PetscErrorCode ierr = VecSetValue(_petsc_vec, index,  value, INSERT_VALUES); PETSCASSERT(ierr);
 }
 void PetscVector::Scale(complex a) {
+    MPI_Bcast(&a, 1, MPIU_SCALAR, 0, PETSC_COMM_WORLD);
     VecScale(_petsc_vec, a);
 }
 void PetscVector::Duplicate(const Vector& o) {
@@ -56,6 +57,19 @@ void PetscVector::Copy(const Vector& o) {
 }
 void PetscVector::Zero() {
     PetscErrorCode ierr = VecZeroEntries(_petsc_vec); PETSCASSERT(ierr);
+}
+double PetscVector::Max() const {
+    PetscReal max;
+    PetscErrorCode ierr = VecMax(_petsc_vec, NULL, &max); PETSCASSERT(ierr);
+    return max;
+}
+double PetscVector::Min() const {
+    PetscReal min;
+    PetscErrorCode ierr = VecMin(_petsc_vec, NULL, &min); PETSCASSERT(ierr);
+    return min;
+}
+void PetscVector::Abs() {
+    PetscErrorCode ierr = VecAbs(_petsc_vec); PETSCASSERT(ierr);
 }
 void PetscVector::Concatenate(const std::vector<Vector>& vecs) {
     PetscErrorCode ierr;

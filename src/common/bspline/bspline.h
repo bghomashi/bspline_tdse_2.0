@@ -152,7 +152,7 @@ namespace bspline {
 		static bool Validate(const nlohmann::json& input);
 		static std::string GetName();
 	};
-	struct ExponentialSequence : Sequence::Register<LinearSequence> {
+	struct ExponentialSequence : Sequence::Register<ExponentialSequence> {
 		double g;
 		
 		static Sequence::Ptr_t Create(const nlohmann::json& input);
@@ -161,7 +161,7 @@ namespace bspline {
 
 		std::vector<double> GetGrid(double xmin, double xmax, int nodes);
 	};
-	struct SinlikeSequence : Sequence::Register<LinearSequence> {
+	struct SinlikeSequence : Sequence::Register<SinlikeSequence> {
 		double a;
 		static Sequence::Ptr_t Create(const nlohmann::json& input);
 		static bool Validate(const nlohmann::json& input);
@@ -169,7 +169,7 @@ namespace bspline {
 
 		std::vector<double> GetGrid(double xmin, double xmax, int nodes);
 	};
-	struct ParabolicLinearSequence : Sequence::Register<LinearSequence> {
+	struct ParabolicLinearSequence : Sequence::Register<ParabolicLinearSequence> {
 		double x0;
 
 		static Sequence::Ptr_t Create(const nlohmann::json& input);

@@ -67,12 +67,22 @@ void PetscEPS::Solve(const Matrix A, const Matrix S, int numVectors, double tol)
         const complex* xx;
         if (rank == 0) {
             VecGetArrayRead(temp->_petsc_vec, &xx);
-            sign = *xx/std::abs(*xx);
+            sign = *xx/std::abs(*xx);                   // grab overall phase
             VecRestoreArrayRead(temp->_petsc_vec, &xx);
         }
         MPI_Bcast(&sign, 1, MPIU_SCALAR, 0, PETSC_COMM_WORLD);
-        VecScale(temp->_petsc_vec, 1./sign);
+        VecScale(temp->_petsc_vec, 1./sign);            // remove phase
         VecRealPart(temp->_petsc_vec);
+
+        // check sign convention
+        if (rank == 0) {
+            VecGetArrayRead(temp->_petsc_vec, &xx);
+            sign = *xx/std::abs(*xx);                   // ensure the first coefficient is positive
+            VecRestoreArrayRead(temp->_petsc_vec, &xx);
+        }
+        MPI_Bcast(&sign, 1, MPIU_SCALAR, 0, PETSC_COMM_WORLD);
+        VecScale(temp->_petsc_vec, sign);            // remove phase
+
 
         // normalize
         MatMult(petscS->_petsc_mat, temp->_petsc_vec, tempDot);

@@ -45,6 +45,15 @@ using namespace tise;
         return false;
     }
 
+    // ---------- continuum
+    if (eigen_state.contains("continuum")) {
+        auto& continuum = eigen_state["continuum"];
+        if (continuum.contains("normalization") && !continuum["normalization"].is_string()) {
+            LOG_CRITICAL("Optional entry \"eigen_state.continuum.normalization\" must be a string.");
+            return false;
+        }
+    }
+
     // ----------- potentials are optional -----------
     if (input.contains("potentials")) {
         if (!input["potentials"].is_array()) {

@@ -9,7 +9,7 @@ Executables="bspline_tise.out bspline_tdse.out ionization.out"
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Wed Aug  3 17:15:23 2022
+# Make data base, printed on Wed Aug  3 18:42:29 2022
 
 # Variables
 
@@ -80,7 +80,7 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXXox6AZt/agent.1284
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXXYzpp1f/agent.1295
 # default
 .SHELLFLAGS := -c
 # environment
@@ -96,7 +96,7 @@ MAKEFILE_LIST := /home/bghomashi/Documents/projects/tdse_bspline/Makefile dep/ob
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 6716
+VSCODE_PID = 2013
 # environment
 XDG_SESSION_TYPE = x11
 # environment
@@ -106,7 +106,7 @@ CUDA_PATH = /opt/cuda
 # makefile (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 11)
 ccsrc = $(filter-out %main.cpp,$(ALLCCSRC))
 # environment
-SESSION_MANAGER = local/TheMachine:@/tmp/.ICE-unix/1228,unix/TheMachine:/tmp/.ICE-unix/1228
+SESSION_MANAGER = local/TheMachine:@/tmp/.ICE-unix/1238,unix/TheMachine:/tmp/.ICE-unix/1238
 # automatic
 *F = $(notdir $*)
 # environment
@@ -193,6 +193,7 @@ EDITOR = /usr/bin/nano
 DISPLAY = :0.0
 # environment
 GTK_MODULES = canberra-gtk-module:canberra-gtk-module
+ 
 # environment
 USER = bghomashi
 # default
@@ -206,10 +207,9 @@ LC_MEASUREMENT = en_US.UTF-8
 # environment
 DEBUGINFOD_URLS = https://debuginfod.archlinux.org 
 # environment
-SSH_AGENT_PID = 1285
+SSH_AGENT_PID = 1296
 # environment
 ETS_TOOLKIT = qt
- 
 # environment
 _ = /usr/bin/make
 # environment
@@ -335,6 +335,7 @@ LC_IDENTIFICATION = en_US.UTF-8
 # dep/common/utility/wigner3j (device 2066, inode 5063): 5 files, no impossibilities.
 # dep/common/file_io (device 2066, inode 13638499): No files, no impossibilities so far.
 # obj/petsc/file_io (device 2066, inode 5216): 5 files, no impossibilities.
+ 
 # dep/common/bspline (device 2066, inode 4996): 13 files, no impossibilities.
 # dep/objects/potentials/yukawa (device 2066, inode 131563): 7 files, no impossibilities.
 # dep/objects/pulses (device 2066, inode 14027836): 3 files, no impossibilities.
@@ -351,7 +352,6 @@ LC_IDENTIFICATION = en_US.UTF-8
 
 # Implicit Rules
 
- 
 %.out: obj/%_main.o obj/objects/observables/wavefunction_obs.o obj/objects/observables/pulse_obs.o obj/objects/observables/debug_eigenstates.o obj/objects/observables/dipole_obs.o obj/objects/observables/dipole_acc_obs.o obj/objects/observables/knot_obs.o obj/objects/observables/basis_obs.o obj/objects/observables/ionization_obs.o obj/objects/observables/norm_obs.o obj/objects/observables/potential_obs.o obj/objects/observables/density_obs.o obj/objects/observables/debug_wavefunction_obs.o obj/objects/observables/population_obs.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_S.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_y.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_U0.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_FF.o obj/objects/propagators/crank_nicolson/crank_nicolson_validate.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_z.o obj/objects/propagators/crank_nicolson/crank_nicolson.o obj/objects/potentials/exponential/exponential_pot_z.o obj/objects/potentials/exponential/exponential_pot_x.o obj/objects/potentials/exponential/exponential_pot_y.o obj/objects/potentials/exponential/exponential_pot.o obj/objects/potentials/coulomb/coulomb_grad_z.o obj/objects/potentials/coulomb/coulomb_axial.o obj/objects/potentials/coulomb/coulomb_grad_x.o obj/objects/potentials/coulomb/coulomb_central.o obj/objects/potentials/coulomb/coulomb_pot.o obj/objects/potentials/coulomb/coulomb_grad_y.o obj/objects/potentials/yukawa/yukawa_axial.o obj/objects/potentials/yukawa/yukawa_pot.o obj/objects/potentials/yukawa/yukawa_pot_z.o obj/objects/potentials/yukawa/yukawa_pot_x.o obj/objects/potentials/yukawa/yukawa_pot_y.o obj/objects/pulses/sin2pulse.o obj/petsc/maths/petsc_gmres.o obj/petsc/maths/petsc_matrix.o obj/petsc/maths/petsc_eps.o obj/petsc/maths/petsc_vector.o obj/petsc/maths/petsc_math_factory.o obj/petsc/maths/petsc_common.o obj/petsc/utility/petsc_profiler.o obj/petsc/utility/petsc_logger.o obj/petsc/file_io/petsc_hdf5.o obj/petsc/file_io/petsc_io_factory.o obj/petsc/file_io/petsc_ascii.o obj/input/validate_input.o obj/common/maths/math_algebra.o obj/common/maths/math_factory.o obj/common/maths/eigen_solver.o obj/common/utility/index_manip.o obj/common/utility/spherical_harmonics.o obj/common/utility/logger.o obj/common/utility/wigner3j/wigner3j_gcf.o obj/common/utility/wigner3j/wigner3j.o obj/common/utility/wigner3j/wigner3j_fraction.o obj/common/utility/banded_matrix.o obj/common/utility/profiler.o obj/common/utility/factory.o obj/common/objects/initial_state.o obj/common/objects/pulse.o obj/common/objects/observable.o obj/common/objects/propagator.o obj/common/bspline/bspline_static_interface.o obj/common/bspline/bspline_evaluate.o obj/common/bspline/bspline_sequence.o obj/common/bspline/bspline_helper.o obj/common/bspline/bspline_coeff_matrix.o obj/common/bspline/bspline_ecs.o obj/common/bspline/bspline_gauss_quad.o obj/common/bspline/bspline_integrate.o obj/common/bspline/bspline_initialize.o obj/common/bspline/bspline_validate.o obj/common/system_state/system_state.o obj/common/tdse/simulation_validate_basis.o obj/common/tdse/simulation.o obj/common/tdse/simulation_step.o obj/common/tdse/simulation_validate.o obj/common/tdse/simulation_initialize.o obj/common/tdse/simulation_finalize.o obj/common/tdse/simulation_load.o obj/common/tdse/simulation_check_symmetry.o obj/common/tise/tise_compute_continuum_state.o obj/common/tise/tise_axial_pot.o obj/common/tise/tise_solve.o obj/common/tise/tise_compute_bound_state.o obj/common/tise/tise_load.o obj/common/tise/tise_central_pot.o obj/common/tise/tise_validate.o obj/common/tise/tise.o obj/common/file_io/io_ascii.o obj/common/file_io/io_factory.o
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 51):
 	$(CXX) $(EXTRAFLAGS) -o $@ $^ $(LDLIBS)
@@ -382,7 +382,7 @@ obj/%.o: src/%.cpp | $(dir $@)
 dep/common/bspline/bspline_integrate.d: src/common/bspline/bspline_integrate.cpp | dep/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_integrate'
-#  Last modified 2022-08-03 17:15:20.263827808
+#  Last modified 2022-08-03 18:42:26.634437316
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -416,7 +416,7 @@ src/objects/observables/basis_obs.cpp:
 dep/common/maths/math_algebra.d: src/common/maths/math_algebra.cpp | dep/common/maths/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/maths/math_algebra'
-#  Last modified 2022-08-03 17:15:21.170487861
+#  Last modified 2022-08-03 18:42:27.544464667
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -443,7 +443,7 @@ dep/common/maths/math_algebra.d: src/common/maths/math_algebra.cpp | dep/common/
 dep/common/file_io/io_factory.d: src/common/file_io/io_factory.cpp | dep/common/file_io/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/file_io/io_factory'
-#  Last modified 2022-08-03 17:15:19.190502368
+#  Last modified 2022-08-03 18:42:25.561070377
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -456,6 +456,7 @@ dep/common/file_io/io_factory.d: src/common/file_io/io_factory.cpp | dep/common/
 # + := 
 # automatic
 # % := 
+ 
 # automatic
 # ^ := 
 # automatic
@@ -491,7 +492,6 @@ src/objects/propagators/crank_nicolson/crank_nicolson_fill_FF.cpp:
 # Not a target:
 src/petsc/file_io/petsc_hdf5.h:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-06-23 12:42:26.51564486
 #  File has been updated.
 #  Successfully updated.
@@ -499,7 +499,7 @@ src/petsc/file_io/petsc_hdf5.h:
 dep/objects/observables/density_obs.d: src/objects/observables/density_obs.cpp | dep/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/density_obs'
-#  Last modified 2022-08-03 17:15:22.880475522
+#  Last modified 2022-08-03 18:42:29.247846686
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -526,7 +526,7 @@ dep/objects/observables/density_obs.d: src/objects/observables/density_obs.cpp |
 bspline_tdse.out: obj/bspline_tdse_main.o obj/objects/observables/wavefunction_obs.o obj/objects/observables/pulse_obs.o obj/objects/observables/debug_eigenstates.o obj/objects/observables/dipole_obs.o obj/objects/observables/dipole_acc_obs.o obj/objects/observables/knot_obs.o obj/objects/observables/basis_obs.o obj/objects/observables/ionization_obs.o obj/objects/observables/norm_obs.o obj/objects/observables/potential_obs.o obj/objects/observables/density_obs.o obj/objects/observables/debug_wavefunction_obs.o obj/objects/observables/population_obs.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_S.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_y.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_U0.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_FF.o obj/objects/propagators/crank_nicolson/crank_nicolson_validate.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_z.o obj/objects/propagators/crank_nicolson/crank_nicolson.o obj/objects/potentials/exponential/exponential_pot_z.o obj/objects/potentials/exponential/exponential_pot_x.o obj/objects/potentials/exponential/exponential_pot_y.o obj/objects/potentials/exponential/exponential_pot.o obj/objects/potentials/coulomb/coulomb_grad_z.o obj/objects/potentials/coulomb/coulomb_axial.o obj/objects/potentials/coulomb/coulomb_grad_x.o obj/objects/potentials/coulomb/coulomb_central.o obj/objects/potentials/coulomb/coulomb_pot.o obj/objects/potentials/coulomb/coulomb_grad_y.o obj/objects/potentials/yukawa/yukawa_axial.o obj/objects/potentials/yukawa/yukawa_pot.o obj/objects/potentials/yukawa/yukawa_pot_z.o obj/objects/potentials/yukawa/yukawa_pot_x.o obj/objects/potentials/yukawa/yukawa_pot_y.o obj/objects/pulses/sin2pulse.o obj/petsc/maths/petsc_gmres.o obj/petsc/maths/petsc_matrix.o obj/petsc/maths/petsc_eps.o obj/petsc/maths/petsc_vector.o obj/petsc/maths/petsc_math_factory.o obj/petsc/maths/petsc_common.o obj/petsc/utility/petsc_profiler.o obj/petsc/utility/petsc_logger.o obj/petsc/file_io/petsc_hdf5.o obj/petsc/file_io/petsc_io_factory.o obj/petsc/file_io/petsc_ascii.o obj/input/validate_input.o obj/common/maths/math_algebra.o obj/common/maths/math_factory.o obj/common/maths/eigen_solver.o obj/common/utility/index_manip.o obj/common/utility/spherical_harmonics.o obj/common/utility/logger.o obj/common/utility/wigner3j/wigner3j_gcf.o obj/common/utility/wigner3j/wigner3j.o obj/common/utility/wigner3j/wigner3j_fraction.o obj/common/utility/banded_matrix.o obj/common/utility/profiler.o obj/common/utility/factory.o obj/common/objects/initial_state.o obj/common/objects/pulse.o obj/common/objects/observable.o obj/common/objects/propagator.o obj/common/bspline/bspline_static_interface.o obj/common/bspline/bspline_evaluate.o obj/common/bspline/bspline_sequence.o obj/common/bspline/bspline_helper.o obj/common/bspline/bspline_coeff_matrix.o obj/common/bspline/bspline_ecs.o obj/common/bspline/bspline_gauss_quad.o obj/common/bspline/bspline_integrate.o obj/common/bspline/bspline_initialize.o obj/common/bspline/bspline_validate.o obj/common/system_state/system_state.o obj/common/tdse/simulation_validate_basis.o obj/common/tdse/simulation.o obj/common/tdse/simulation_step.o obj/common/tdse/simulation_validate.o obj/common/tdse/simulation_initialize.o obj/common/tdse/simulation_finalize.o obj/common/tdse/simulation_load.o obj/common/tdse/simulation_check_symmetry.o obj/common/tise/tise_compute_continuum_state.o obj/common/tise/tise_axial_pot.o obj/common/tise/tise_solve.o obj/common/tise/tise_compute_bound_state.o obj/common/tise/tise_load.o obj/common/tise/tise_central_pot.o obj/common/tise/tise_validate.o obj/common/tise/tise.o obj/common/file_io/io_ascii.o obj/common/file_io/io_factory.o
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'bspline_tdse'
-#  Last modified 2022-07-22 20:43:38.737747242
+#  Last modified 2022-08-03 17:53:52.781717049
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 51):
@@ -535,7 +535,7 @@ bspline_tdse.out: obj/bspline_tdse_main.o obj/objects/observables/wavefunction_o
 dep/common/objects/propagator.d: src/common/objects/propagator.cpp | dep/common/objects/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/objects/propagator'
-#  Last modified 2022-08-03 17:15:20.657158268
+#  Last modified 2022-08-03 18:42:27.024449292
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -576,6 +576,7 @@ obj/objects/propagators/crank_nicolson/crank_nicolson_validate.o: src/objects/pr
 # automatic
 # % := 
 # automatic
+ 
 # ^ := src/objects/propagators/crank_nicolson/crank_nicolson_validate.cpp src/objects/propagators/crank_nicolson/crank_nicolson.h src/common/objects/propagator.h src/common/utility/factory.h src/common/utility/json.hpp src/common/maths/math_common.h src/common/maths/gmres_solver.h src/common/maths/vector.h src/common/maths/matrix.h src/common/utility/logger.h
 # automatic
 # ? := 
@@ -596,7 +597,7 @@ src/petsc/file_io/petsc_ascii.cpp:
 dep/objects/propagators/crank_nicolson/crank_nicolson.d: src/objects/propagators/crank_nicolson/crank_nicolson.cpp | dep/objects/propagators/crank_nicolson/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/propagators/crank_nicolson/crank_nicolson'
-#  Last modified 2022-08-03 17:15:22.370479187
+#  Last modified 2022-08-03 18:42:28.734499019
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -615,7 +616,6 @@ dep/objects/propagators/crank_nicolson/crank_nicolson.d: src/objects/propagators
 # ? := 
 # automatic
 # | := 
- 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 66):
@@ -624,7 +624,7 @@ dep/objects/propagators/crank_nicolson/crank_nicolson.d: src/objects/propagators
 dep/common/objects/initial_state.d: src/common/objects/initial_state.cpp | dep/common/objects/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/objects/initial_state'
-#  Last modified 2022-08-03 17:15:20.807157171
+#  Last modified 2022-08-03 18:42:27.174453727
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -651,7 +651,7 @@ dep/common/objects/initial_state.d: src/common/objects/initial_state.cpp | dep/c
 obj/objects/observables/wavefunction_obs.o: src/objects/observables/wavefunction_obs.cpp src/objects/observables/wavefunction_obs.cpp src/objects/observables/wavefunction_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/file_io/io_hdf5.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_factory.h src/common/file_io/io_ascii.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/utility/logger.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/wavefunction_obs'
-#  Last modified 2022-07-03 14:48:21.484346896
+#  Last modified 2022-08-03 17:53:44.801555187
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -687,7 +687,7 @@ dep/common/utility/wigner3j/:
 dep/common/maths/math_factory.d: src/common/maths/math_factory.cpp | dep/common/maths/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/maths/math_factory'
-#  Last modified 2022-08-03 17:15:21.140488077
+#  Last modified 2022-08-03 18:42:27.511130349
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -708,6 +708,7 @@ dep/common/maths/math_factory.d: src/common/maths/math_factory.cpp | dep/common/
 # | := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+ 
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 66):
 	@$(CPP) $(CPPFLAGS) $(EXTRAFLAGS) $< -MM -MT $(subst $(DDIR), $(ODIR), $(@:.d=.o)) >$@
 
@@ -738,7 +739,6 @@ obj/common/utility/banded_matrix.o: src/common/utility/banded_matrix.cpp src/com
 # ^ := src/common/utility/banded_matrix.cpp src/common/utility/banded_matrix.h
 # automatic
 # ? := 
- 
 # automatic
 # | := 
 # variable set hash-table stats:
@@ -749,7 +749,7 @@ obj/common/utility/banded_matrix.o: src/common/utility/banded_matrix.cpp src/com
 dep/objects/propagators/crank_nicolson/crank_nicolson_fill_S.d: src/objects/propagators/crank_nicolson/crank_nicolson_fill_S.cpp | dep/objects/propagators/crank_nicolson/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/propagators/crank_nicolson/crank_nicolson_fill_S'
-#  Last modified 2022-08-03 17:15:22.727143291
+#  Last modified 2022-08-03 18:42:29.084508883
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -776,7 +776,7 @@ dep/objects/propagators/crank_nicolson/crank_nicolson_fill_S.d: src/objects/prop
 dep/common/bspline/bspline_ecs.d: src/common/bspline/bspline_ecs.cpp | dep/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_ecs'
-#  Last modified 2022-08-03 17:15:20.350493841
+#  Last modified 2022-08-03 18:42:26.717773214
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -817,7 +817,7 @@ src/objects/observables/potential_obs.cpp:
 obj/objects/potentials/coulomb/coulomb_grad_z.o: src/objects/potentials/coulomb/coulomb_grad_z.cpp src/objects/potentials/coulomb/coulomb_grad_z.cpp src/objects/potentials/coulomb/coulomb_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/potentials/coulomb/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/coulomb/coulomb_grad_z'
-#  Last modified 2022-07-03 15:03:12.351794274
+#  Last modified 2022-08-03 17:53:47.331606466
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -825,6 +825,7 @@ obj/objects/potentials/coulomb/coulomb_grad_z.o: src/objects/potentials/coulomb/
 # automatic
 # * := objects/potentials/coulomb/coulomb_grad_z
 # automatic
+ 
 # < := src/objects/potentials/coulomb/coulomb_grad_z.cpp
 # automatic
 # + := src/objects/potentials/coulomb/coulomb_grad_z.cpp src/objects/potentials/coulomb/coulomb_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h
@@ -858,7 +859,6 @@ src/objects/observables/dipole_obs.h:
 # Not a target:
 src/common/bspline/bspline_common.h:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-06-23 16:52:02.527873003
 #  File has been updated.
 #  Successfully updated.
@@ -866,7 +866,7 @@ src/common/bspline/bspline_common.h:
 dep/objects/potentials/coulomb/coulomb_grad_y.d: src/objects/potentials/coulomb/coulomb_grad_y.cpp | dep/objects/potentials/coulomb/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/coulomb/coulomb_grad_y'
-#  Last modified 2022-08-03 17:15:21.900482573
+#  Last modified 2022-08-03 18:42:28.274485941
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -934,6 +934,7 @@ src/common/utility/wigner3j/wigner3j.cpp:
 #  Successfully updated.
 
 # Not a target:
+ 
 src/common/bspline/bspline_ecs.h:
 #  Implicit rule search has been done.
 #  Last modified 2022-06-23 17:38:04.791578273
@@ -950,7 +951,7 @@ src/common/bspline/bspline_integrate.cpp:
 obj/common/tdse/simulation_validate.o: src/common/tdse/simulation_validate.cpp src/common/tdse/simulation_validate.cpp src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/utility/factory.h src/common/utility/json.hpp src/common/objects/observable.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/utility/logger.h src/common/utility/file_exists.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/common/tdse/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tdse/simulation_validate'
-#  Last modified 2022-07-03 15:03:53.306191198
+#  Last modified 2022-08-03 17:53:50.988347311
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -964,7 +965,6 @@ obj/common/tdse/simulation_validate.o: src/common/tdse/simulation_validate.cpp s
 # automatic
 # % := 
 # automatic
- 
 # ^ := src/common/tdse/simulation_validate.cpp src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/utility/factory.h src/common/utility/json.hpp src/common/objects/observable.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/utility/logger.h src/common/utility/file_exists.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h
 # automatic
 # ? := 
@@ -987,7 +987,7 @@ dep/petsc/file_io/:
 obj/common/tise/:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'obj/common/tise'
-#  Last modified 2022-07-03 15:04:05.873181361
+#  Last modified 2022-08-03 17:53:51.828364361
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 62):
@@ -1019,7 +1019,7 @@ src/objects/propagators/crank_nicolson/crank_nicolson_fill_S.cpp:
 obj/common/tdse/:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'obj/common/tdse'
-#  Last modified 2022-07-03 15:03:57.649636488
+#  Last modified 2022-08-03 17:53:51.091682742
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 62):
@@ -1028,7 +1028,7 @@ obj/common/tdse/:
 dep/petsc/file_io/petsc_hdf5.d: src/petsc/file_io/petsc_hdf5.cpp | dep/petsc/file_io/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'petsc/file_io/petsc_hdf5'
-#  Last modified 2022-08-03 17:15:21.327153392
+#  Last modified 2022-08-03 18:42:27.697802535
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1041,6 +1041,7 @@ dep/petsc/file_io/petsc_hdf5.d: src/petsc/file_io/petsc_hdf5.cpp | dep/petsc/fil
 # + := 
 # automatic
 # % := 
+ 
 # automatic
 # ^ := 
 # automatic
@@ -1073,7 +1074,6 @@ obj/common/utility/index_manip.o: src/common/utility/index_manip.cpp src/common/
 #  File has been updated.
 #  Successfully updated.
 # automatic
- 
 # @ := obj/common/utility/index_manip.o
 # automatic
 # * := common/utility/index_manip
@@ -1104,7 +1104,7 @@ src/common/tise/tise_validate.cpp:
 dep/common/tdse/simulation_validate_basis.d: src/common/tdse/simulation_validate_basis.cpp | dep/common/tdse/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tdse/simulation_validate_basis'
-#  Last modified 2022-08-03 17:15:20.06049596
+#  Last modified 2022-08-03 18:42:26.431097724
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1131,7 +1131,7 @@ dep/common/tdse/simulation_validate_basis.d: src/common/tdse/simulation_validate
 dep/objects/propagators/crank_nicolson/crank_nicolson_fill_FF.d: src/objects/propagators/crank_nicolson/crank_nicolson_fill_FF.cpp | dep/objects/propagators/crank_nicolson/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/propagators/crank_nicolson/crank_nicolson_fill_FF'
-#  Last modified 2022-08-03 17:15:22.523811419
+#  Last modified 2022-08-03 18:42:28.884503284
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1172,7 +1172,7 @@ src/common/utility/banded_matrix.h:
 obj/objects/propagators/crank_nicolson/crank_nicolson_fill_S.o: src/objects/propagators/crank_nicolson/crank_nicolson_fill_S.cpp src/objects/propagators/crank_nicolson/crank_nicolson_fill_S.cpp src/objects/propagators/crank_nicolson/crank_nicolson.h src/common/objects/propagator.h src/common/utility/factory.h src/common/utility/json.hpp src/common/maths/math_common.h src/common/maths/gmres_solver.h src/common/maths/vector.h src/common/maths/matrix.h src/common/utility/index_manip.h src/common/tdse/simulation.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/propagators/crank_nicolson/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/propagators/crank_nicolson/crank_nicolson_fill_S'
-#  Last modified 2022-07-03 15:03:00.171475066
+#  Last modified 2022-08-03 17:53:45.944911691
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1182,7 +1182,6 @@ obj/objects/propagators/crank_nicolson/crank_nicolson_fill_S.o: src/objects/prop
 # automatic
 # < := src/objects/propagators/crank_nicolson/crank_nicolson_fill_S.cpp
 # automatic
- 
 # + := src/objects/propagators/crank_nicolson/crank_nicolson_fill_S.cpp src/objects/propagators/crank_nicolson/crank_nicolson.h src/common/objects/propagator.h src/common/utility/factory.h src/common/utility/json.hpp src/common/maths/math_common.h src/common/maths/gmres_solver.h src/common/maths/vector.h src/common/maths/matrix.h src/common/utility/index_manip.h src/common/tdse/simulation.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h
 # automatic
 # % := 
@@ -1234,7 +1233,7 @@ src/common/file_io/io_ascii.cpp:
 obj/objects/potentials/exponential/exponential_pot_y.o: src/objects/potentials/exponential/exponential_pot_y.cpp src/objects/potentials/exponential/exponential_pot_y.cpp src/objects/potentials/exponential/exponential_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/potentials/exponential/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/exponential/exponential_pot_y'
-#  Last modified 2022-07-03 15:03:10.171737241
+#  Last modified 2022-08-03 17:53:47.268271851
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1270,9 +1269,8 @@ dep/input/:
 obj/common/bspline/bspline_initialize.o: src/common/bspline/bspline_initialize.cpp src/common/bspline/bspline_initialize.cpp src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/maths/math_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/utility/json.hpp src/common/utility/factory.h src/common/bspline/bspline_ecs.h | obj/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_initialize'
-#  Last modified 2022-07-03 15:03:46.612685025
+#  Last modified 2022-08-03 17:53:50.388335134
 #  File has been updated.
- 
 #  Successfully updated.
 # automatic
 # @ := obj/common/bspline/bspline_initialize.o
@@ -1298,7 +1296,7 @@ obj/common/bspline/bspline_initialize.o: src/common/bspline/bspline_initialize.c
 dep/common/utility/wigner3j/wigner3j.d: src/common/utility/wigner3j/wigner3j.cpp | dep/common/utility/wigner3j/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/utility/wigner3j/wigner3j'
-#  Last modified 2022-08-03 17:15:20.967156002
+#  Last modified 2022-08-03 18:42:27.334458457
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1323,6 +1321,7 @@ dep/common/utility/wigner3j/wigner3j.d: src/common/utility/wigner3j/wigner3j.cpp
 	@$(CPP) $(CPPFLAGS) $(EXTRAFLAGS) $< -MM -MT $(subst $(DDIR), $(ODIR), $(@:.d=.o)) >$@
 
 # Not a target:
+ 
 src/objects/observables/population_obs.cpp:
 #  Implicit rule search has been done.
 #  Last modified 2022-07-03 01:23:23.91332868
@@ -1339,7 +1338,7 @@ src/common/bspline/bspline_evaluate.cpp:
 dep/common/tdse/simulation_step.d: src/common/tdse/simulation_step.cpp | dep/common/tdse/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tdse/simulation_step'
-#  Last modified 2022-08-03 17:15:19.960496694
+#  Last modified 2022-08-03 18:42:26.327761211
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1407,7 +1406,7 @@ src/common/bspline/bspline_validate.cpp:
 dep/petsc/utility/petsc_profiler.d: src/petsc/utility/petsc_profiler.cpp | dep/petsc/utility/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'petsc/utility/petsc_profiler'
-#  Last modified 2022-08-03 17:15:21.397152885
+#  Last modified 2022-08-03 18:42:27.767804604
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1427,7 +1426,6 @@ dep/petsc/utility/petsc_profiler.d: src/petsc/utility/petsc_profiler.cpp | dep/p
 # automatic
 # | := 
 # variable set hash-table stats:
- 
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 66):
 	@$(CPP) $(CPPFLAGS) $(EXTRAFLAGS) $< -MM -MT $(subst $(DDIR), $(ODIR), $(@:.d=.o)) >$@
@@ -1449,7 +1447,7 @@ src/common/utility/vec3.h:
 dep/objects/observables/knot_obs.d: src/objects/observables/knot_obs.cpp | dep/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/knot_obs'
-#  Last modified 2022-08-03 17:15:23.137140355
+#  Last modified 2022-08-03 18:42:29.504520378
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1483,7 +1481,7 @@ src/common/utility/logger.cpp:
 dep/common/system_state/system_state.d: src/common/system_state/system_state.cpp | dep/common/system_state/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/system_state/system_state'
-#  Last modified 2022-08-03 17:15:20.113828906
+#  Last modified 2022-08-03 18:42:26.481099263
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1510,7 +1508,7 @@ dep/common/system_state/system_state.d: src/common/system_state/system_state.cpp
 obj/objects/observables/knot_obs.o: src/objects/observables/knot_obs.cpp src/objects/observables/knot_obs.cpp src/objects/observables/knot_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/file_io/io_ascii.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/file_io/io_factory.h src/common/utility/logger.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/knot_obs'
-#  Last modified 2022-07-03 15:02:50.221213281
+#  Last modified 2022-08-03 17:53:44.701553161
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1524,6 +1522,7 @@ obj/objects/observables/knot_obs.o: src/objects/observables/knot_obs.cpp src/obj
 # automatic
 # % := 
 # automatic
+ 
 # ^ := src/objects/observables/knot_obs.cpp src/objects/observables/knot_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/file_io/io_ascii.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/file_io/io_factory.h src/common/utility/logger.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h
 # automatic
 # ? := 
@@ -1537,9 +1536,8 @@ obj/objects/observables/knot_obs.o: src/objects/observables/knot_obs.cpp src/obj
 obj/common/tise/tise_solve.o: src/common/tise/tise_solve.cpp src/common/tise/tise_solve.cpp src/common/tise/tise.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/logger.h src/common/utility/profiler.h src/common/utility/timer.h src/common/utility/file_exists.h src/common/tdse/simulation.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/file_io/io_factory.h src/common/file_io/io_ascii.h src/common/maths/math_algebra.h src/common/maths/eigen_solver.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h | obj/common/tise/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tise/tise_solve'
-#  Last modified 2022-07-03 15:04:00.729715784
+#  Last modified 2022-08-03 17:53:50.851677871
 #  File has been updated.
- 
 #  Successfully updated.
 # automatic
 # @ := obj/common/tise/tise_solve.o
@@ -1565,7 +1563,7 @@ obj/common/tise/tise_solve.o: src/common/tise/tise_solve.cpp src/common/tise/tis
 obj/objects/potentials/yukawa/yukawa_pot_y.o: src/objects/potentials/yukawa/yukawa_pot_y.cpp src/objects/potentials/yukawa/yukawa_pot_y.cpp src/objects/potentials/yukawa/yukawa_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/potentials/yukawa/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/yukawa/yukawa_pot_y'
-#  Last modified 2022-07-03 15:03:20.6153434
+#  Last modified 2022-08-03 17:53:48.681633843
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1633,6 +1631,7 @@ obj/common/file_io/io_ascii.o: src/common/file_io/io_ascii.cpp src/common/file_i
 # automatic
 # | := 
 # variable set hash-table stats:
+ 
 # Load=8/32=25%, Rehash=0, Collisions=1/14=7%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 76):
 	$(CXX) $(CPPFLAGS) $(EXTRAFLAGS) -c $< -o $@
@@ -1640,10 +1639,9 @@ obj/common/file_io/io_ascii.o: src/common/file_io/io_ascii.cpp src/common/file_i
 obj/objects/potentials/exponential/exponential_pot_x.o: src/objects/potentials/exponential/exponential_pot_x.cpp src/objects/potentials/exponential/exponential_pot_x.cpp src/objects/potentials/exponential/exponential_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/potentials/exponential/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/exponential/exponential_pot_x'
-#  Last modified 2022-07-03 15:03:09.23837948
+#  Last modified 2022-08-03 17:53:47.161603021
 #  File has been updated.
 #  Successfully updated.
- 
 # automatic
 # @ := obj/objects/potentials/exponential/exponential_pot_x.o
 # automatic
@@ -1668,7 +1666,7 @@ obj/objects/potentials/exponential/exponential_pot_x.o: src/objects/potentials/e
 obj/objects/observables/density_obs.o: src/objects/observables/density_obs.cpp src/objects/observables/density_obs.cpp src/objects/observables/density_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/file_io/io_ascii.h src/common/utility/logger.h src/common/utility/index_manip.h src/common/utility/spherical_harmonics.h src/common/maths/math_common.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/file_io/io_factory.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/density_obs'
-#  Last modified 2022-07-03 15:02:56.594714403
+#  Last modified 2022-08-03 17:53:46.254917975
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1716,7 +1714,7 @@ src/common/file_io/io_factory.h:
 dep/common/utility/profiler.d: src/common/utility/profiler.cpp | dep/common/utility/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/utility/profiler'
-#  Last modified 2022-08-03 17:15:20.890489896
+#  Last modified 2022-08-03 18:42:27.257789525
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1747,7 +1745,6 @@ obj/common/bspline/bspline_ecs.o: src/common/bspline/bspline_ecs.cpp src/common/
 #  File has been updated.
 #  Successfully updated.
 # automatic
- 
 # @ := obj/common/bspline/bspline_ecs.o
 # automatic
 # * := common/bspline/bspline_ecs
@@ -1755,6 +1752,7 @@ obj/common/bspline/bspline_ecs.o: src/common/bspline/bspline_ecs.cpp src/common/
 # < := src/common/bspline/bspline_ecs.cpp
 # automatic
 # + := src/common/bspline/bspline_ecs.cpp src/common/bspline/bspline_ecs.h src/common/maths/math_common.h src/common/bspline/bspline_common.h
+ 
 # automatic
 # % := 
 # automatic
@@ -1837,7 +1835,7 @@ src/petsc/maths/petsc_gmres.h:
 obj/common/tdse/simulation_initialize.o: src/common/tdse/simulation_initialize.cpp src/common/tdse/simulation_initialize.cpp src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/utility/factory.h src/common/utility/json.hpp src/common/objects/observable.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/utility/logger.h src/common/utility/file_exists.h src/common/utility/index_manip.h src/common/file_io/io_factory.h src/common/file_io/io_ascii.h src/common/maths/math_algebra.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/common/tdse/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tdse/simulation_initialize'
-#  Last modified 2022-07-03 15:03:54.362885117
+#  Last modified 2022-08-03 17:53:50.738342236
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1851,7 +1849,6 @@ obj/common/tdse/simulation_initialize.o: src/common/tdse/simulation_initialize.c
 # automatic
 # % := 
 # automatic
- 
 # ^ := src/common/tdse/simulation_initialize.cpp src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/utility/factory.h src/common/utility/json.hpp src/common/objects/observable.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/utility/logger.h src/common/utility/file_exists.h src/common/utility/index_manip.h src/common/file_io/io_factory.h src/common/file_io/io_ascii.h src/common/maths/math_algebra.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h
 # automatic
 # ? := 
@@ -1875,6 +1872,7 @@ obj/objects/observables/pulse_obs.o: src/objects/observables/pulse_obs.cpp src/o
 # automatic
 # < := src/objects/observables/pulse_obs.cpp
 # automatic
+ 
 # + := src/objects/observables/pulse_obs.cpp src/objects/observables/pulse_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/file_io/io_ascii.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/file_io/io_factory.h src/common/utility/logger.h
 # automatic
 # % := 
@@ -1892,7 +1890,7 @@ obj/objects/observables/pulse_obs.o: src/objects/observables/pulse_obs.cpp src/o
 dep/common/tdse/simulation_finalize.d: src/common/tdse/simulation_finalize.cpp | dep/common/tdse/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tdse/simulation_finalize'
-#  Last modified 2022-08-03 17:15:19.803831183
+#  Last modified 2022-08-03 18:42:26.171089721
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1955,13 +1953,12 @@ src/common/utility/to_lower.h:
 #  Implicit rule search has been done.
 #  Last modified 2022-06-24 14:30:33.96267631
 #  File has been updated.
- 
 #  Successfully updated.
 
 dep/objects/potentials/yukawa/yukawa_pot_x.d: src/objects/potentials/yukawa/yukawa_pot_x.cpp | dep/objects/potentials/yukawa/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/yukawa/yukawa_pot_x'
-#  Last modified 2022-08-03 17:15:21.74048373
+#  Last modified 2022-08-03 18:42:28.114481392
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1988,7 +1985,7 @@ dep/objects/potentials/yukawa/yukawa_pot_x.d: src/objects/potentials/yukawa/yuka
 obj/objects/potentials/exponential/exponential_pot.o: src/objects/potentials/exponential/exponential_pot.cpp src/objects/potentials/exponential/exponential_pot.cpp src/objects/potentials/exponential/exponential_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/potentials/exponential/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/exponential/exponential_pot'
-#  Last modified 2022-07-03 15:03:11.405102846
+#  Last modified 2022-08-03 17:53:47.638279351
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -1998,6 +1995,7 @@ obj/objects/potentials/exponential/exponential_pot.o: src/objects/potentials/exp
 # automatic
 # < := src/objects/potentials/exponential/exponential_pot.cpp
 # automatic
+ 
 # + := src/objects/potentials/exponential/exponential_pot.cpp src/objects/potentials/exponential/exponential_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h
 # automatic
 # % := 
@@ -2022,7 +2020,7 @@ src/petsc/file_io/petsc_hdf5.cpp:
 dep/common/tise/tise_compute_continuum_state.d: src/common/tise/tise_compute_continuum_state.cpp | dep/common/tise/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tise/tise_compute_continuum_state'
-#  Last modified 2022-08-03 17:15:19.65049898
+#  Last modified 2022-08-03 18:42:26.021085104
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2063,13 +2061,12 @@ src/objects/pulses/sin2pulse.cpp:
 obj/common/bspline/:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'obj/common/bspline'
-#  Last modified 2022-07-03 15:03:47.669379005
+#  Last modified 2022-08-03 17:53:50.368334728
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 62):
 	@mkdir -p $@
 
- 
 obj/petsc/maths/petsc_eps.o: src/petsc/maths/petsc_eps.cpp src/petsc/maths/petsc_eps.cpp src/petsc/maths/petsc_eps.h src/common/maths/eigen_solver.h src/common/maths/math_common.h src/petsc/maths/petsc_matrix.h src/common/maths/matrix.h src/petsc/maths/petsc_common.h src/petsc/maths/petsc_math_factory.h src/common/maths/math_factory.h src/petsc/maths/petsc_vector.h src/common/maths/vector.h | obj/petsc/maths/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'petsc/maths/petsc_eps'
@@ -2109,6 +2106,7 @@ obj/common/utility/factory.o: src/common/utility/factory.cpp src/common/utility/
 #  Implicit/static pattern stem: 'common/utility/factory'
 #  Last modified 2022-07-03 15:03:34.142361999
 #  File has been updated.
+ 
 #  Successfully updated.
 # automatic
 # @ := obj/common/utility/factory.o
@@ -2148,7 +2146,7 @@ src/common/utility/json.hpp:
 dep/common/tise/tise_solve.d: src/common/tise/tise_solve.cpp | dep/common/tise/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tise/tise_solve'
-#  Last modified 2022-08-03 17:15:19.550499716
+#  Last modified 2022-08-03 18:42:25.914415042
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2189,7 +2187,6 @@ src/objects/observables/dipole_obs.cpp:
 # Not a target:
 src/common/utility/index_manip.cpp:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-06-23 22:44:30.226170092
 #  File has been updated.
 #  Successfully updated.
@@ -2197,7 +2194,7 @@ src/common/utility/index_manip.cpp:
 dep/petsc/utility/petsc_logger.d: src/petsc/utility/petsc_logger.cpp | dep/petsc/utility/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'petsc/utility/petsc_logger'
-#  Last modified 2022-08-03 17:15:21.357153175
+#  Last modified 2022-08-03 18:42:27.731136853
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2224,7 +2221,7 @@ dep/petsc/utility/petsc_logger.d: src/petsc/utility/petsc_logger.cpp | dep/petsc
 obj/objects/observables/dipole_acc_obs.o: src/objects/observables/dipole_acc_obs.cpp src/objects/observables/dipole_acc_obs.cpp src/objects/observables/dipole_acc_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/maths/math_common.h src/common/file_io/io_ascii.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/utility/logger.h src/common/utility/file_exists.h src/common/maths/math_algebra.h src/common/file_io/io_factory.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/dipole_acc_obs'
-#  Last modified 2022-07-22 20:43:36.321027878
+#  Last modified 2022-08-03 17:53:44.80488859
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2233,6 +2230,7 @@ obj/objects/observables/dipole_acc_obs.o: src/objects/observables/dipole_acc_obs
 # * := objects/observables/dipole_acc_obs
 # automatic
 # < := src/objects/observables/dipole_acc_obs.cpp
+ 
 # automatic
 # + := src/objects/observables/dipole_acc_obs.cpp src/objects/observables/dipole_acc_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/maths/math_common.h src/common/file_io/io_ascii.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/utility/logger.h src/common/utility/file_exists.h src/common/maths/math_algebra.h src/common/file_io/io_factory.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h
 # automatic
@@ -2251,7 +2249,7 @@ obj/objects/observables/dipole_acc_obs.o: src/objects/observables/dipole_acc_obs
 obj/common/bspline/bspline_gauss_quad.o: src/common/bspline/bspline_gauss_quad.cpp src/common/bspline/bspline_gauss_quad.cpp src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/maths/math_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/utility/json.hpp src/common/utility/factory.h src/common/bspline/bspline_ecs.h | obj/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_gauss_quad'
-#  Last modified 2022-07-03 15:03:44.572632273
+#  Last modified 2022-08-03 17:53:49.724988341
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2278,9 +2276,8 @@ obj/common/bspline/bspline_gauss_quad.o: src/common/bspline/bspline_gauss_quad.c
 dep/objects/observables/debug_wavefunction_obs.d: src/objects/observables/debug_wavefunction_obs.cpp | dep/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/debug_wavefunction_obs'
-#  Last modified 2022-08-03 17:15:22.827142573
+#  Last modified 2022-08-03 18:42:29.194511894
 #  File has been updated.
- 
 #  Successfully updated.
 # automatic
 # @ := dep/objects/observables/debug_wavefunction_obs.d
@@ -2306,7 +2303,7 @@ dep/objects/observables/debug_wavefunction_obs.d: src/objects/observables/debug_
 dep/objects/potentials/coulomb/coulomb_central.d: src/objects/potentials/coulomb/coulomb_central.cpp | dep/objects/potentials/coulomb/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/coulomb/coulomb_central'
-#  Last modified 2022-08-03 17:15:21.957148827
+#  Last modified 2022-08-03 18:42:28.331154219
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2360,7 +2357,7 @@ obj/petsc/maths/petsc_common.o: src/petsc/maths/petsc_common.cpp src/petsc/maths
 dep/objects/potentials/coulomb/coulomb_axial.d: src/objects/potentials/coulomb/coulomb_axial.cpp | dep/objects/potentials/coulomb/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/coulomb/coulomb_axial'
-#  Last modified 2022-08-03 17:15:22.057148105
+#  Last modified 2022-08-03 18:42:28.431157063
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2394,9 +2391,8 @@ src/common/objects/initial_state.h:
 dep/objects/observables/norm_obs.d: src/objects/observables/norm_obs.cpp | dep/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/norm_obs'
-#  Last modified 2022-08-03 17:15:22.983808113
+#  Last modified 2022-08-03 18:42:29.351182848
 #  File has been updated.
- 
 #  Successfully updated.
 # automatic
 # @ := dep/objects/observables/norm_obs.d
@@ -2422,7 +2418,8 @@ dep/objects/observables/norm_obs.d: src/objects/observables/norm_obs.cpp | dep/o
 dep/common/bspline/bspline_validate.d: src/common/bspline/bspline_validate.cpp | dep/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_validate'
-#  Last modified 2022-08-03 17:15:20.163828539
+#  Last modified 2022-08-03 18:42:26.531100802
+ 
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2456,7 +2453,7 @@ src/petsc/file_io/petsc_io_factory.h:
 dep/objects/observables/population_obs.d: src/objects/observables/population_obs.cpp | dep/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/population_obs'
-#  Last modified 2022-08-03 17:15:22.777142932
+#  Last modified 2022-08-03 18:42:29.144510525
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2497,7 +2494,7 @@ src/common/tdse/simulation_validate.cpp:
 dep/objects/potentials/coulomb/coulomb_grad_x.d: src/objects/potentials/coulomb/coulomb_grad_x.cpp | dep/objects/potentials/coulomb/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/coulomb/coulomb_grad_x'
-#  Last modified 2022-08-03 17:15:22.003815156
+#  Last modified 2022-08-03 18:42:28.377822212
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2508,7 +2505,6 @@ dep/objects/potentials/coulomb/coulomb_grad_x.d: src/objects/potentials/coulomb/
 # < := 
 # automatic
 # + := 
- 
 # automatic
 # % := 
 # automatic
@@ -2525,7 +2521,7 @@ dep/objects/potentials/coulomb/coulomb_grad_x.d: src/objects/potentials/coulomb/
 ionization.out: obj/ionization_main.o obj/objects/observables/wavefunction_obs.o obj/objects/observables/pulse_obs.o obj/objects/observables/debug_eigenstates.o obj/objects/observables/dipole_obs.o obj/objects/observables/dipole_acc_obs.o obj/objects/observables/knot_obs.o obj/objects/observables/basis_obs.o obj/objects/observables/ionization_obs.o obj/objects/observables/norm_obs.o obj/objects/observables/potential_obs.o obj/objects/observables/density_obs.o obj/objects/observables/debug_wavefunction_obs.o obj/objects/observables/population_obs.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_S.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_y.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_U0.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_FF.o obj/objects/propagators/crank_nicolson/crank_nicolson_validate.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_z.o obj/objects/propagators/crank_nicolson/crank_nicolson.o obj/objects/potentials/exponential/exponential_pot_z.o obj/objects/potentials/exponential/exponential_pot_x.o obj/objects/potentials/exponential/exponential_pot_y.o obj/objects/potentials/exponential/exponential_pot.o obj/objects/potentials/coulomb/coulomb_grad_z.o obj/objects/potentials/coulomb/coulomb_axial.o obj/objects/potentials/coulomb/coulomb_grad_x.o obj/objects/potentials/coulomb/coulomb_central.o obj/objects/potentials/coulomb/coulomb_pot.o obj/objects/potentials/coulomb/coulomb_grad_y.o obj/objects/potentials/yukawa/yukawa_axial.o obj/objects/potentials/yukawa/yukawa_pot.o obj/objects/potentials/yukawa/yukawa_pot_z.o obj/objects/potentials/yukawa/yukawa_pot_x.o obj/objects/potentials/yukawa/yukawa_pot_y.o obj/objects/pulses/sin2pulse.o obj/petsc/maths/petsc_gmres.o obj/petsc/maths/petsc_matrix.o obj/petsc/maths/petsc_eps.o obj/petsc/maths/petsc_vector.o obj/petsc/maths/petsc_math_factory.o obj/petsc/maths/petsc_common.o obj/petsc/utility/petsc_profiler.o obj/petsc/utility/petsc_logger.o obj/petsc/file_io/petsc_hdf5.o obj/petsc/file_io/petsc_io_factory.o obj/petsc/file_io/petsc_ascii.o obj/input/validate_input.o obj/common/maths/math_algebra.o obj/common/maths/math_factory.o obj/common/maths/eigen_solver.o obj/common/utility/index_manip.o obj/common/utility/spherical_harmonics.o obj/common/utility/logger.o obj/common/utility/wigner3j/wigner3j_gcf.o obj/common/utility/wigner3j/wigner3j.o obj/common/utility/wigner3j/wigner3j_fraction.o obj/common/utility/banded_matrix.o obj/common/utility/profiler.o obj/common/utility/factory.o obj/common/objects/initial_state.o obj/common/objects/pulse.o obj/common/objects/observable.o obj/common/objects/propagator.o obj/common/bspline/bspline_static_interface.o obj/common/bspline/bspline_evaluate.o obj/common/bspline/bspline_sequence.o obj/common/bspline/bspline_helper.o obj/common/bspline/bspline_coeff_matrix.o obj/common/bspline/bspline_ecs.o obj/common/bspline/bspline_gauss_quad.o obj/common/bspline/bspline_integrate.o obj/common/bspline/bspline_initialize.o obj/common/bspline/bspline_validate.o obj/common/system_state/system_state.o obj/common/tdse/simulation_validate_basis.o obj/common/tdse/simulation.o obj/common/tdse/simulation_step.o obj/common/tdse/simulation_validate.o obj/common/tdse/simulation_initialize.o obj/common/tdse/simulation_finalize.o obj/common/tdse/simulation_load.o obj/common/tdse/simulation_check_symmetry.o obj/common/tise/tise_compute_continuum_state.o obj/common/tise/tise_axial_pot.o obj/common/tise/tise_solve.o obj/common/tise/tise_compute_bound_state.o obj/common/tise/tise_load.o obj/common/tise/tise_central_pot.o obj/common/tise/tise_validate.o obj/common/tise/tise.o obj/common/file_io/io_ascii.o obj/common/file_io/io_factory.o
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'ionization'
-#  Last modified 2022-07-22 21:24:29.104693782
+#  Last modified 2022-08-03 17:53:53.665068319
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 51):
@@ -2534,7 +2530,7 @@ ionization.out: obj/ionization_main.o obj/objects/observables/wavefunction_obs.o
 obj/objects/potentials/exponential/:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'obj/objects/potentials/exponential'
-#  Last modified 2022-07-03 15:03:11.348434698
+#  Last modified 2022-08-03 17:53:47.578278136
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 62):
@@ -2550,11 +2546,12 @@ src/common/utility/factory.cpp:
 obj/common/tdse/simulation_load.o: src/common/tdse/simulation_load.cpp src/common/tdse/simulation_load.cpp src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/utility/factory.h src/common/utility/json.hpp src/common/objects/observable.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/utility/logger.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/common/tdse/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tdse/simulation_load'
-#  Last modified 2022-07-03 15:03:56.662944402
+#  Last modified 2022-08-03 17:53:51.161684161
 #  File has been updated.
 #  Successfully updated.
 # automatic
 # @ := obj/common/tdse/simulation_load.o
+ 
 # automatic
 # * := common/tdse/simulation_load
 # automatic
@@ -2577,7 +2574,7 @@ obj/common/tdse/simulation_load.o: src/common/tdse/simulation_load.cpp src/commo
 dep/objects/observables/dipole_acc_obs.d: src/objects/observables/dipole_acc_obs.cpp | dep/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/dipole_acc_obs'
-#  Last modified 2022-08-03 17:15:23.187139999
+#  Last modified 2022-08-03 18:42:29.55785517
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2611,7 +2608,6 @@ obj/common/file_io/io_factory.o: src/common/file_io/io_factory.cpp src/common/fi
 # @ := obj/common/file_io/io_factory.o
 # automatic
 # * := common/file_io/io_factory
- 
 # automatic
 # < := src/common/file_io/io_factory.cpp
 # automatic
@@ -2675,6 +2671,7 @@ src/petsc/maths/petsc_vector.h:
 obj/ionization_main.o: src/ionization_main.cpp | obj/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'ionization_main'
+ 
 #  File is an intermediate prerequisite.
 #  File does not exist.
 #  File has not been updated.
@@ -2709,7 +2706,7 @@ src/petsc/maths/petsc_matrix.h:
 dep/common/tise/tise_compute_bound_state.d: src/common/tise/tise_compute_bound_state.cpp | dep/common/tise/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tise/tise_compute_bound_state'
-#  Last modified 2022-08-03 17:15:19.497166776
+#  Last modified 2022-08-03 18:42:25.861079999
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2736,8 +2733,7 @@ dep/common/tise/tise_compute_bound_state.d: src/common/tise/tise_compute_bound_s
 dep/objects/potentials/coulomb/coulomb_pot.d: src/objects/potentials/coulomb/coulomb_pot.cpp | dep/objects/potentials/coulomb/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/coulomb/coulomb_pot'
- 
-#  Last modified 2022-08-03 17:15:21.950482208
+#  Last modified 2022-08-03 18:42:28.324487362
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2764,7 +2760,7 @@ dep/objects/potentials/coulomb/coulomb_pot.d: src/objects/potentials/coulomb/cou
 obj/objects/observables/debug_eigenstates.o: src/objects/observables/debug_eigenstates.cpp src/objects/observables/debug_eigenstates.cpp src/objects/observables/debug_eigenstates.h src/common/file_io/io_ascii.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/utility/logger.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_factory.h src/common/file_io/io_hdf5.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h | obj/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/debug_eigenstates'
-#  Last modified 2022-07-03 15:02:46.381111999
+#  Last modified 2022-08-03 17:53:44.801555187
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2792,6 +2788,7 @@ obj/common/utility/profiler.o: src/common/utility/profiler.cpp src/common/utilit
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/utility/profiler'
 #  Last modified 2022-07-03 15:03:33.262339153
+ 
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2840,7 +2837,6 @@ obj/petsc/file_io/petsc_ascii.o: src/petsc/file_io/petsc_ascii.cpp src/petsc/fil
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/14=7%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 76):
- 
 	$(CXX) $(CPPFLAGS) $(EXTRAFLAGS) -c $< -o $@
 
 # Not a target:
@@ -2853,7 +2849,7 @@ src/common/utility/spherical_harmonics.cpp:
 dep/common/tdse/simulation_load.d: src/common/tdse/simulation_load.cpp | dep/common/tdse/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tdse/simulation_load'
-#  Last modified 2022-08-03 17:15:19.75383155
+#  Last modified 2022-08-03 18:42:26.121088183
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2905,7 +2901,7 @@ dep/common/maths/:
 dep/common/file_io/io_ascii.d: src/common/file_io/io_ascii.cpp | dep/common/file_io/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/file_io/io_ascii'
-#  Last modified 2022-08-03 17:15:19.223835454
+#  Last modified 2022-08-03 18:42:25.587737899
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2925,6 +2921,7 @@ dep/common/file_io/io_ascii.d: src/common/file_io/io_ascii.cpp | dep/common/file
 # automatic
 # | := 
 # variable set hash-table stats:
+ 
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 66):
 	@$(CPP) $(CPPFLAGS) $(EXTRAFLAGS) $< -MM -MT $(subst $(DDIR), $(ODIR), $(@:.d=.o)) >$@
@@ -2960,14 +2957,13 @@ obj/common/utility/logger.o: src/common/utility/logger.cpp src/common/utility/lo
 # | := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/14=7%
- 
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 76):
 	$(CXX) $(CPPFLAGS) $(EXTRAFLAGS) -c $< -o $@
 
 obj/objects/observables/debug_wavefunction_obs.o: src/objects/observables/debug_wavefunction_obs.cpp src/objects/observables/debug_wavefunction_obs.cpp src/objects/observables/debug_wavefunction_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/file_io/io_ascii.h src/common/utility/logger.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/file_io/io_factory.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/debug_wavefunction_obs'
-#  Last modified 2022-07-03 15:02:57.918082528
+#  Last modified 2022-08-03 17:53:46.194916757
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -2994,7 +2990,7 @@ obj/objects/observables/debug_wavefunction_obs.o: src/objects/observables/debug_
 obj/objects/observables/:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'obj/objects/observables'
-#  Last modified 2022-07-22 20:43:36.261026571
+#  Last modified 2022-08-03 17:53:46.20158356
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 62):
@@ -3029,6 +3025,7 @@ src/objects/observables/wavefunction_obs.h:
 #  Last modified 2022-07-01 01:10:28.443797388
 #  File has been updated.
 #  Successfully updated.
+ 
 
 # Not a target:
 src/objects/observables/basis_obs.h:
@@ -3040,10 +3037,9 @@ src/objects/observables/basis_obs.h:
 obj/common/bspline/bspline_evaluate.o: src/common/bspline/bspline_evaluate.cpp src/common/bspline/bspline_evaluate.cpp src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/maths/math_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/utility/json.hpp src/common/utility/factory.h src/common/bspline/bspline_ecs.h | obj/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_evaluate'
-#  Last modified 2022-07-03 15:03:40.06251552
+#  Last modified 2022-08-03 17:53:49.208311193
 #  File has been updated.
 #  Successfully updated.
- 
 # automatic
 # @ := obj/common/bspline/bspline_evaluate.o
 # automatic
@@ -3102,7 +3098,7 @@ src/common/maths/eigen_solver.h:
 dep/objects/potentials/exponential/exponential_pot.d: src/objects/potentials/exponential/exponential_pot.cpp | dep/objects/potentials/exponential/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/exponential/exponential_pot'
-#  Last modified 2022-08-03 17:15:22.160480696
+#  Last modified 2022-08-03 18:42:28.531159904
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3129,7 +3125,7 @@ dep/objects/potentials/exponential/exponential_pot.d: src/objects/potentials/exp
 dep/common/tise/tise.d: src/common/tise/tise.cpp | dep/common/tise/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tise/tise'
-#  Last modified 2022-08-03 17:15:19.290501632
+#  Last modified 2022-08-03 18:42:25.647739824
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3145,6 +3141,7 @@ dep/common/tise/tise.d: src/common/tise/tise.cpp | dep/common/tise/
 # automatic
 # ^ := 
 # automatic
+ 
 # ? := 
 # automatic
 # | := 
@@ -3156,7 +3153,6 @@ dep/common/tise/tise.d: src/common/tise/tise.cpp | dep/common/tise/
 obj/objects/potentials/coulomb/coulomb_central.o: src/objects/potentials/coulomb/coulomb_central.cpp src/objects/potentials/coulomb/coulomb_central.cpp | obj/objects/potentials/coulomb/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/coulomb/coulomb_central'
- 
 #  Last modified 2022-07-03 15:03:14.27851131
 #  File has been updated.
 #  Successfully updated.
@@ -3184,7 +3180,7 @@ obj/objects/potentials/coulomb/coulomb_central.o: src/objects/potentials/coulomb
 dep/objects/potentials/yukawa/yukawa_pot_y.d: src/objects/potentials/yukawa/yukawa_pot_y.cpp | dep/objects/potentials/yukawa/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/yukawa/yukawa_pot_y'
-#  Last modified 2022-08-03 17:15:21.690484093
+#  Last modified 2022-08-03 18:42:28.064479971
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3254,8 +3250,9 @@ src/objects/propagators/crank_nicolson/crank_nicolson.cpp:
 obj/objects/observables/dipole_obs.o: src/objects/observables/dipole_obs.cpp src/objects/observables/dipole_obs.cpp src/objects/observables/dipole_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/maths/math_common.h src/common/file_io/io_ascii.h src/common/utility/banded_matrix.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/utility/logger.h src/common/utility/file_exists.h src/common/maths/math_algebra.h src/common/file_io/io_factory.h src/common/utility/index_manip.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/dipole_obs'
-#  Last modified 2022-07-03 15:02:47.721147357
+#  Last modified 2022-08-03 17:53:44.8515562
 #  File has been updated.
+ 
 #  Successfully updated.
 # automatic
 # @ := obj/objects/observables/dipole_obs.o
@@ -3268,7 +3265,6 @@ obj/objects/observables/dipole_obs.o: src/objects/observables/dipole_obs.cpp src
 # automatic
 # % := 
 # automatic
- 
 # ^ := src/objects/observables/dipole_obs.cpp src/objects/observables/dipole_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/maths/math_common.h src/common/file_io/io_ascii.h src/common/utility/banded_matrix.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/utility/logger.h src/common/utility/file_exists.h src/common/maths/math_algebra.h src/common/file_io/io_factory.h src/common/utility/index_manip.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h
 # automatic
 # ? := 
@@ -3282,7 +3278,7 @@ obj/objects/observables/dipole_obs.o: src/objects/observables/dipole_obs.cpp src
 dep/petsc/maths/petsc_common.d: src/petsc/maths/petsc_common.cpp | dep/petsc/maths/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'petsc/maths/petsc_common'
-#  Last modified 2022-08-03 17:15:21.430485976
+#  Last modified 2022-08-03 18:42:27.797805491
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3318,7 +3314,7 @@ dep/petsc/utility/:
 obj/common/bspline/bspline_coeff_matrix.o: src/common/bspline/bspline_coeff_matrix.cpp src/common/bspline/bspline_coeff_matrix.cpp src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/maths/math_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/utility/json.hpp src/common/utility/factory.h src/common/bspline/bspline_ecs.h | obj/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_coeff_matrix'
-#  Last modified 2022-07-03 15:03:43.275932057
+#  Last modified 2022-08-03 17:53:49.704987935
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3345,7 +3341,7 @@ obj/common/bspline/bspline_coeff_matrix.o: src/common/bspline/bspline_coeff_matr
 dep/objects/observables/dipole_obs.d: src/objects/observables/dipole_obs.cpp | dep/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/dipole_obs'
-#  Last modified 2022-08-03 17:15:23.240472951
+#  Last modified 2022-08-03 18:42:29.60785654
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3369,10 +3365,11 @@ dep/objects/observables/dipole_obs.d: src/objects/observables/dipole_obs.cpp | d
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 66):
 	@$(CPP) $(CPPFLAGS) $(EXTRAFLAGS) $< -MM -MT $(subst $(DDIR), $(ODIR), $(@:.d=.o)) >$@
 
+ 
 obj/common/objects/initial_state.o: src/common/objects/initial_state.cpp src/common/objects/initial_state.cpp src/common/objects/initial_state.h src/common/maths/vector.h src/common/maths/math_common.h src/common/utility/json.hpp src/common/tdse/simulation.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/utility/factory.h src/common/objects/observable.h src/common/objects/propagator.h src/common/objects/potential.h src/common/maths/matrix.h src/common/maths/math_algebra.h src/common/file_io/io_factory.h src/common/file_io/io_ascii.h src/common/utility/file_exists.h src/common/utility/logger.h src/common/utility/index_manip.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h src/petsc/maths/petsc_common.h src/petsc/maths/petsc_math_factory.h src/petsc/maths/petsc_vector.h src/petsc/maths/petsc_matrix.h | obj/common/objects/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/objects/initial_state'
-#  Last modified 2022-07-03 15:03:35.469063096
+#  Last modified 2022-08-03 17:53:49.608319309
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3386,7 +3383,6 @@ obj/common/objects/initial_state.o: src/common/objects/initial_state.cpp src/com
 # automatic
 # % := 
 # automatic
- 
 # ^ := src/common/objects/initial_state.cpp src/common/objects/initial_state.h src/common/maths/vector.h src/common/maths/math_common.h src/common/utility/json.hpp src/common/tdse/simulation.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/utility/factory.h src/common/objects/observable.h src/common/objects/propagator.h src/common/objects/potential.h src/common/maths/matrix.h src/common/maths/math_algebra.h src/common/file_io/io_factory.h src/common/file_io/io_ascii.h src/common/utility/file_exists.h src/common/utility/logger.h src/common/utility/index_manip.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h src/petsc/maths/petsc_common.h src/petsc/maths/petsc_math_factory.h src/petsc/maths/petsc_vector.h src/petsc/maths/petsc_matrix.h
 # automatic
 # ? := 
@@ -3427,7 +3423,7 @@ obj/common/tise/tise.o: src/common/tise/tise.cpp src/common/tise/tise.cpp src/co
 dep/common/utility/spherical_harmonics.d: src/common/utility/spherical_harmonics.cpp | dep/common/utility/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/utility/spherical_harmonics'
-#  Last modified 2022-08-03 17:15:21.047155421
+#  Last modified 2022-08-03 18:42:27.417794255
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3454,7 +3450,7 @@ dep/common/utility/spherical_harmonics.d: src/common/utility/spherical_harmonics
 dep/common/bspline/bspline_helper.d: src/common/bspline/bspline_helper.cpp | dep/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_helper'
-#  Last modified 2022-08-03 17:15:20.45382642
+#  Last modified 2022-08-03 18:42:26.817776292
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3478,10 +3474,11 @@ dep/common/bspline/bspline_helper.d: src/common/bspline/bspline_helper.cpp | dep
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 66):
 	@$(CPP) $(CPPFLAGS) $(EXTRAFLAGS) $< -MM -MT $(subst $(DDIR), $(ODIR), $(@:.d=.o)) >$@
 
+ 
 bspline_tise.out: obj/bspline_tise_main.o obj/objects/observables/wavefunction_obs.o obj/objects/observables/pulse_obs.o obj/objects/observables/debug_eigenstates.o obj/objects/observables/dipole_obs.o obj/objects/observables/dipole_acc_obs.o obj/objects/observables/knot_obs.o obj/objects/observables/basis_obs.o obj/objects/observables/ionization_obs.o obj/objects/observables/norm_obs.o obj/objects/observables/potential_obs.o obj/objects/observables/density_obs.o obj/objects/observables/debug_wavefunction_obs.o obj/objects/observables/population_obs.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_S.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_y.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_U0.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_FF.o obj/objects/propagators/crank_nicolson/crank_nicolson_validate.o obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_z.o obj/objects/propagators/crank_nicolson/crank_nicolson.o obj/objects/potentials/exponential/exponential_pot_z.o obj/objects/potentials/exponential/exponential_pot_x.o obj/objects/potentials/exponential/exponential_pot_y.o obj/objects/potentials/exponential/exponential_pot.o obj/objects/potentials/coulomb/coulomb_grad_z.o obj/objects/potentials/coulomb/coulomb_axial.o obj/objects/potentials/coulomb/coulomb_grad_x.o obj/objects/potentials/coulomb/coulomb_central.o obj/objects/potentials/coulomb/coulomb_pot.o obj/objects/potentials/coulomb/coulomb_grad_y.o obj/objects/potentials/yukawa/yukawa_axial.o obj/objects/potentials/yukawa/yukawa_pot.o obj/objects/potentials/yukawa/yukawa_pot_z.o obj/objects/potentials/yukawa/yukawa_pot_x.o obj/objects/potentials/yukawa/yukawa_pot_y.o obj/objects/pulses/sin2pulse.o obj/petsc/maths/petsc_gmres.o obj/petsc/maths/petsc_matrix.o obj/petsc/maths/petsc_eps.o obj/petsc/maths/petsc_vector.o obj/petsc/maths/petsc_math_factory.o obj/petsc/maths/petsc_common.o obj/petsc/utility/petsc_profiler.o obj/petsc/utility/petsc_logger.o obj/petsc/file_io/petsc_hdf5.o obj/petsc/file_io/petsc_io_factory.o obj/petsc/file_io/petsc_ascii.o obj/input/validate_input.o obj/common/maths/math_algebra.o obj/common/maths/math_factory.o obj/common/maths/eigen_solver.o obj/common/utility/index_manip.o obj/common/utility/spherical_harmonics.o obj/common/utility/logger.o obj/common/utility/wigner3j/wigner3j_gcf.o obj/common/utility/wigner3j/wigner3j.o obj/common/utility/wigner3j/wigner3j_fraction.o obj/common/utility/banded_matrix.o obj/common/utility/profiler.o obj/common/utility/factory.o obj/common/objects/initial_state.o obj/common/objects/pulse.o obj/common/objects/observable.o obj/common/objects/propagator.o obj/common/bspline/bspline_static_interface.o obj/common/bspline/bspline_evaluate.o obj/common/bspline/bspline_sequence.o obj/common/bspline/bspline_helper.o obj/common/bspline/bspline_coeff_matrix.o obj/common/bspline/bspline_ecs.o obj/common/bspline/bspline_gauss_quad.o obj/common/bspline/bspline_integrate.o obj/common/bspline/bspline_initialize.o obj/common/bspline/bspline_validate.o obj/common/system_state/system_state.o obj/common/tdse/simulation_validate_basis.o obj/common/tdse/simulation.o obj/common/tdse/simulation_step.o obj/common/tdse/simulation_validate.o obj/common/tdse/simulation_initialize.o obj/common/tdse/simulation_finalize.o obj/common/tdse/simulation_load.o obj/common/tdse/simulation_check_symmetry.o obj/common/tise/tise_compute_continuum_state.o obj/common/tise/tise_axial_pot.o obj/common/tise/tise_solve.o obj/common/tise/tise_compute_bound_state.o obj/common/tise/tise_load.o obj/common/tise/tise_central_pot.o obj/common/tise/tise_validate.o obj/common/tise/tise.o obj/common/file_io/io_ascii.o obj/common/file_io/io_factory.o
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'bspline_tise'
-#  Last modified 2022-07-22 20:43:37.731058625
+#  Last modified 2022-08-03 17:53:52.788383851
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -3490,10 +3487,9 @@ bspline_tise.out: obj/bspline_tise_main.o obj/objects/observables/wavefunction_o
 	$(CXX) $(EXTRAFLAGS) -o $@ $^ $(LDLIBS)
 
 dep/petsc/maths/petsc_matrix.d: src/petsc/maths/petsc_matrix.cpp | dep/petsc/maths/
- 
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'petsc/maths/petsc_matrix'
-#  Last modified 2022-08-03 17:15:21.557151725
+#  Last modified 2022-08-03 18:42:27.931142766
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3534,7 +3530,7 @@ src/common/bspline/bspline_static_interface.cpp:
 dep/common/bspline/bspline_gauss_quad.d: src/common/bspline/bspline_gauss_quad.cpp | dep/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_gauss_quad'
-#  Last modified 2022-08-03 17:15:20.317160751
+#  Last modified 2022-08-03 18:42:26.684438855
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3561,7 +3557,7 @@ dep/common/bspline/bspline_gauss_quad.d: src/common/bspline/bspline_gauss_quad.c
 dep/common/utility/logger.d: src/common/utility/logger.cpp | dep/common/utility/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/utility/logger'
-#  Last modified 2022-08-03 17:15:21.013822328
+#  Last modified 2022-08-03 18:42:27.377793072
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3601,6 +3597,7 @@ obj/common/utility/wigner3j/wigner3j_fraction.o: src/common/utility/wigner3j/wig
 # + := src/common/utility/wigner3j/wigner3j_fraction.cpp src/common/utility/wigner3j/wigner3j.h
 # automatic
 # % := 
+ 
 # automatic
 # ^ := src/common/utility/wigner3j/wigner3j_fraction.cpp src/common/utility/wigner3j/wigner3j.h
 # automatic
@@ -3615,7 +3612,7 @@ obj/common/utility/wigner3j/wigner3j_fraction.o: src/common/utility/wigner3j/wig
 obj/objects/propagators/crank_nicolson/crank_nicolson_fill_U0.o: src/objects/propagators/crank_nicolson/crank_nicolson_fill_U0.cpp src/objects/propagators/crank_nicolson/crank_nicolson_fill_U0.cpp src/objects/propagators/crank_nicolson/crank_nicolson.h src/common/objects/propagator.h src/common/utility/factory.h src/common/utility/json.hpp src/common/maths/math_common.h src/common/maths/gmres_solver.h src/common/maths/vector.h src/common/maths/matrix.h src/common/utility/index_manip.h src/common/tdse/simulation.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/objects/propagators/crank_nicolson/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/propagators/crank_nicolson/crank_nicolson_fill_U0'
-#  Last modified 2022-07-03 15:03:02.164860734
+#  Last modified 2022-08-03 17:53:45.858243266
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3625,7 +3622,6 @@ obj/objects/propagators/crank_nicolson/crank_nicolson_fill_U0.o: src/objects/pro
 # automatic
 # < := src/objects/propagators/crank_nicolson/crank_nicolson_fill_U0.cpp
 # automatic
- 
 # + := src/objects/propagators/crank_nicolson/crank_nicolson_fill_U0.cpp src/objects/propagators/crank_nicolson/crank_nicolson.h src/common/objects/propagator.h src/common/utility/factory.h src/common/utility/json.hpp src/common/maths/math_common.h src/common/maths/gmres_solver.h src/common/maths/vector.h src/common/maths/matrix.h src/common/utility/index_manip.h src/common/tdse/simulation.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h
 # automatic
 # % := 
@@ -3643,7 +3639,7 @@ obj/objects/propagators/crank_nicolson/crank_nicolson_fill_U0.o: src/objects/pro
 dep/objects/observables/basis_obs.d: src/objects/observables/basis_obs.cpp | dep/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/basis_obs'
-#  Last modified 2022-08-03 17:15:23.087140711
+#  Last modified 2022-08-03 18:42:29.45451901
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3711,7 +3707,7 @@ src/petsc/file_io/petsc_io_factory.cpp:
 obj/:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'obj'
-#  Last modified 2022-07-22 21:24:29.114694002
+#  Last modified 2022-08-03 17:53:53.671735121
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 62):
@@ -3720,6 +3716,7 @@ obj/:
 # Not a target:
 src/objects/potentials/exponential/exponential_pot_x.cpp:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-07-01 00:30:46.669484518
 #  File has been updated.
 #  Successfully updated.
@@ -3727,7 +3724,7 @@ src/objects/potentials/exponential/exponential_pot_x.cpp:
 obj/common/bspline/bspline_sequence.o: src/common/bspline/bspline_sequence.cpp src/common/bspline/bspline_sequence.cpp src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/maths/math_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/utility/json.hpp src/common/utility/factory.h src/common/bspline/bspline_ecs.h src/common/utility/logger.h | obj/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_sequence'
-#  Last modified 2022-07-03 15:03:41.239212665
+#  Last modified 2022-08-03 17:53:49.744988747
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3736,7 +3733,6 @@ obj/common/bspline/bspline_sequence.o: src/common/bspline/bspline_sequence.cpp s
 # * := common/bspline/bspline_sequence
 # automatic
 # < := src/common/bspline/bspline_sequence.cpp
- 
 # automatic
 # + := src/common/bspline/bspline_sequence.cpp src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/maths/math_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/utility/json.hpp src/common/utility/factory.h src/common/bspline/bspline_ecs.h src/common/utility/logger.h
 # automatic
@@ -3755,7 +3751,7 @@ obj/common/bspline/bspline_sequence.o: src/common/bspline/bspline_sequence.cpp s
 obj/common/tise/tise_central_pot.o: src/common/tise/tise_central_pot.cpp src/common/tise/tise_central_pot.cpp src/common/tise/tise.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/logger.h src/common/utility/profiler.h src/common/utility/timer.h src/common/utility/file_exists.h src/common/tdse/simulation.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/file_io/io_factory.h src/common/file_io/io_ascii.h src/common/maths/math_algebra.h src/common/maths/eigen_solver.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h | obj/common/tise/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tise/tise_central_pot'
-#  Last modified 2022-07-03 15:04:03.843129193
+#  Last modified 2022-08-03 17:53:51.578359285
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3796,7 +3792,7 @@ src/common/file_io/io_factory.cpp:
 obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x.o: src/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x.cpp src/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x.cpp src/objects/propagators/crank_nicolson/crank_nicolson.h src/common/objects/propagator.h src/common/utility/factory.h src/common/utility/json.hpp src/common/maths/math_common.h src/common/maths/gmres_solver.h src/common/maths/vector.h src/common/maths/matrix.h src/common/utility/index_manip.h src/common/utility/spherical_harmonics.h src/common/utility/logger.h src/common/utility/banded_matrix.h src/common/tdse/simulation.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/objects/propagators/crank_nicolson/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x'
-#  Last modified 2022-07-03 15:03:03.18822092
+#  Last modified 2022-08-03 17:53:45.988245901
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3811,6 +3807,7 @@ obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x.o: src/objects/p
 # % := 
 # automatic
 # ^ := src/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x.cpp src/objects/propagators/crank_nicolson/crank_nicolson.h src/common/objects/propagator.h src/common/utility/factory.h src/common/utility/json.hpp src/common/maths/math_common.h src/common/maths/gmres_solver.h src/common/maths/vector.h src/common/maths/matrix.h src/common/utility/index_manip.h src/common/utility/spherical_harmonics.h src/common/utility/logger.h src/common/utility/banded_matrix.h src/common/tdse/simulation.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h
+ 
 # automatic
 # ? := 
 # automatic
@@ -3818,7 +3815,6 @@ obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x.o: src/objects/p
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/14=7%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 76):
- 
 	$(CXX) $(CPPFLAGS) $(EXTRAFLAGS) -c $< -o $@
 
 dep/objects/potentials/coulomb/:
@@ -3891,7 +3887,7 @@ src/common/tdse/simulation_check_symmetry.cpp:
 dep/petsc/maths/petsc_math_factory.d: src/petsc/maths/petsc_math_factory.cpp | dep/petsc/maths/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'petsc/maths/petsc_math_factory'
-#  Last modified 2022-08-03 17:15:21.460485759
+#  Last modified 2022-08-03 18:42:27.831139809
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3918,7 +3914,7 @@ dep/petsc/maths/petsc_math_factory.d: src/petsc/maths/petsc_math_factory.cpp | d
 dep/objects/observables/potential_obs.d: src/objects/observables/potential_obs.cpp | dep/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/potential_obs'
-#  Last modified 2022-08-03 17:15:22.930475164
+#  Last modified 2022-08-03 18:42:29.297848054
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -3945,7 +3941,7 @@ dep/objects/observables/potential_obs.d: src/objects/observables/potential_obs.c
 dep/petsc/maths/petsc_eps.d: src/petsc/maths/petsc_eps.cpp | dep/petsc/maths/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'petsc/maths/petsc_eps'
-#  Last modified 2022-08-03 17:15:21.527151945
+#  Last modified 2022-08-03 18:42:27.897808447
 #  File has been updated.
  
 #  Successfully updated.
@@ -3973,7 +3969,7 @@ dep/petsc/maths/petsc_eps.d: src/petsc/maths/petsc_eps.cpp | dep/petsc/maths/
 dep/objects/observables/pulse_obs.d: src/objects/observables/pulse_obs.cpp | dep/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/pulse_obs'
-#  Last modified 2022-08-03 17:15:23.340472239
+#  Last modified 2022-08-03 18:42:29.7111927
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4057,13 +4053,13 @@ src/objects/observables/pulse_obs.h:
 dep/common/tdse/simulation_validate.d: src/common/tdse/simulation_validate.cpp | dep/common/tdse/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tdse/simulation_validate'
-#  Last modified 2022-08-03 17:15:19.907163753
+#  Last modified 2022-08-03 18:42:26.277759671
 #  File has been updated.
 #  Successfully updated.
 # automatic
 # @ := dep/common/tdse/simulation_validate.d
- 
 # automatic
+ 
 # * := common/tdse/simulation_validate
 # automatic
 # < := 
@@ -4092,7 +4088,7 @@ src/common/bspline/bspline_coeff_matrix.cpp:
 obj/common/tise/tise_axial_pot.o: src/common/tise/tise_axial_pot.cpp src/common/tise/tise_axial_pot.cpp src/common/tise/tise.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/logger.h src/common/utility/profiler.h src/common/utility/timer.h src/common/utility/file_exists.h src/common/file_io/io_factory.h src/common/file_io/io_ascii.h src/common/maths/math_algebra.h src/common/maths/eigen_solver.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h | obj/common/tise/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tise/tise_axial_pot'
-#  Last modified 2022-07-03 15:03:59.723023208
+#  Last modified 2022-08-03 17:53:50.938346296
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4140,7 +4136,7 @@ src/petsc/maths/petsc_common.cpp:
 dep/common/maths/eigen_solver.d: src/common/maths/eigen_solver.cpp | dep/common/maths/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/maths/eigen_solver'
-#  Last modified 2022-08-03 17:15:21.107154986
+#  Last modified 2022-08-03 18:42:27.477796029
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4160,7 +4156,6 @@ dep/common/maths/eigen_solver.d: src/common/maths/eigen_solver.cpp | dep/common/
 # automatic
 # | := 
 # variable set hash-table stats:
- 
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 66):
 	@$(CPP) $(CPPFLAGS) $(EXTRAFLAGS) $< -MM -MT $(subst $(DDIR), $(ODIR), $(@:.d=.o)) >$@
@@ -4168,7 +4163,7 @@ dep/common/maths/eigen_solver.d: src/common/maths/eigen_solver.cpp | dep/common/
 dep/common/bspline/bspline_initialize.d: src/common/bspline/bspline_initialize.cpp | dep/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_initialize'
-#  Last modified 2022-08-03 17:15:20.213828175
+#  Last modified 2022-08-03 18:42:26.58110234
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4190,6 +4185,7 @@ dep/common/bspline/bspline_initialize.d: src/common/bspline/bspline_initialize.c
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 66):
+ 
 	@$(CPP) $(CPPFLAGS) $(EXTRAFLAGS) $< -MM -MT $(subst $(DDIR), $(ODIR), $(@:.d=.o)) >$@
 
 # Not a target:
@@ -4217,7 +4213,7 @@ dep/common/bspline/:
 dep/objects/potentials/exponential/exponential_pot_x.d: src/objects/potentials/exponential/exponential_pot_x.cpp | dep/objects/potentials/exponential/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/exponential/exponential_pot_x'
-#  Last modified 2022-08-03 17:15:22.263813288
+#  Last modified 2022-08-03 18:42:28.631162748
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4244,7 +4240,7 @@ dep/objects/potentials/exponential/exponential_pot_x.d: src/objects/potentials/e
 dep/petsc/file_io/petsc_ascii.d: src/petsc/file_io/petsc_ascii.cpp | dep/petsc/file_io/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'petsc/file_io/petsc_ascii'
-#  Last modified 2022-08-03 17:15:21.260487208
+#  Last modified 2022-08-03 18:42:27.631133896
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4273,7 +4269,6 @@ obj/common/maths/math_factory.o: src/common/maths/math_factory.cpp src/common/ma
 #  Implicit/static pattern stem: 'common/maths/math_factory'
 #  Last modified 2022-07-03 15:03:30.265594636
 #  File has been updated.
- 
 #  Successfully updated.
 # automatic
 # @ := obj/common/maths/math_factory.o
@@ -4306,7 +4301,7 @@ src/common/objects/observable.cpp:
 obj/common/bspline/bspline_helper.o: src/common/bspline/bspline_helper.cpp src/common/bspline/bspline_helper.cpp src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/maths/math_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/utility/json.hpp src/common/utility/factory.h src/common/bspline/bspline_ecs.h | obj/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_helper'
-#  Last modified 2022-07-03 15:03:42.165903324
+#  Last modified 2022-08-03 17:53:49.408315251
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4317,6 +4312,7 @@ obj/common/bspline/bspline_helper.o: src/common/bspline/bspline_helper.cpp src/c
 # < := src/common/bspline/bspline_helper.cpp
 # automatic
 # + := src/common/bspline/bspline_helper.cpp src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/maths/math_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/utility/json.hpp src/common/utility/factory.h src/common/bspline/bspline_ecs.h
+ 
 # automatic
 # % := 
 # automatic
@@ -4349,7 +4345,7 @@ src/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x.cpp:
 obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_z.o: src/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_z.cpp src/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_z.cpp src/objects/propagators/crank_nicolson/crank_nicolson.h src/common/objects/propagator.h src/common/utility/factory.h src/common/utility/json.hpp src/common/maths/math_common.h src/common/maths/gmres_solver.h src/common/maths/vector.h src/common/maths/matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/tdse/simulation.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h src/common/utility/banded_matrix.h | obj/objects/propagators/crank_nicolson/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/propagators/crank_nicolson/crank_nicolson_fill_HI_z'
-#  Last modified 2022-07-03 15:03:06.164965641
+#  Last modified 2022-08-03 17:53:47.061600993
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4363,7 +4359,6 @@ obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_z.o: src/objects/p
 # automatic
 # % := 
 # automatic
- 
 # ^ := src/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_z.cpp src/objects/propagators/crank_nicolson/crank_nicolson.h src/common/objects/propagator.h src/common/utility/factory.h src/common/utility/json.hpp src/common/maths/math_common.h src/common/maths/gmres_solver.h src/common/maths/vector.h src/common/maths/matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/tdse/simulation.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h src/common/utility/banded_matrix.h
 # automatic
 # ? := 
@@ -4411,6 +4406,7 @@ obj/objects/pulses/sin2pulse.o: src/objects/pulses/sin2pulse.cpp src/objects/pul
 obj/petsc/maths/petsc_math_factory.o: src/petsc/maths/petsc_math_factory.cpp src/petsc/maths/petsc_math_factory.cpp src/petsc/maths/petsc_math_factory.h src/common/maths/math_factory.h src/common/maths/math_common.h src/petsc/maths/petsc_vector.h src/common/maths/vector.h src/petsc/maths/petsc_matrix.h src/common/maths/matrix.h src/petsc/maths/petsc_gmres.h src/common/maths/gmres_solver.h src/petsc/maths/petsc_eps.h src/common/maths/eigen_solver.h src/common/utility/logger.h | obj/petsc/maths/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'petsc/maths/petsc_math_factory'
+ 
 #  Last modified 2022-07-03 15:03:24.695449722
 #  File has been updated.
 #  Successfully updated.
@@ -4476,7 +4472,6 @@ dep/petsc/maths/:
 
 # Not a target:
 src/bspline_tise_main.cpp:
- 
 #  Implicit rule search has been done.
 #  Last modified 2022-07-03 15:32:57.517135871
 #  File has been updated.
@@ -4492,7 +4487,7 @@ src/ionization_main.cpp:
 dep/common/tdse/simulation_initialize.d: src/common/tdse/simulation_initialize.cpp | dep/common/tdse/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tdse/simulation_initialize'
-#  Last modified 2022-08-03 17:15:19.857164124
+#  Last modified 2022-08-03 18:42:26.224424697
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4532,10 +4527,11 @@ dep/common/utility/:
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 62):
 	@mkdir -p $@
 
+ 
 obj/objects/propagators/crank_nicolson/crank_nicolson_fill_FF.o: src/objects/propagators/crank_nicolson/crank_nicolson_fill_FF.cpp src/objects/propagators/crank_nicolson/crank_nicolson_fill_FF.cpp src/objects/propagators/crank_nicolson/crank_nicolson.h src/common/objects/propagator.h src/common/utility/factory.h src/common/utility/json.hpp src/common/maths/math_common.h src/common/maths/gmres_solver.h src/common/maths/vector.h src/common/maths/matrix.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/tdse/simulation.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/math_algebra.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/objects/propagators/crank_nicolson/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/propagators/crank_nicolson/crank_nicolson_fill_FF'
-#  Last modified 2022-07-03 15:03:04.221581359
+#  Last modified 2022-08-03 17:53:47.051600791
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4562,7 +4558,7 @@ obj/objects/propagators/crank_nicolson/crank_nicolson_fill_FF.o: src/objects/pro
 obj/objects/observables/basis_obs.o: src/objects/observables/basis_obs.cpp src/objects/observables/basis_obs.cpp src/objects/observables/basis_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/file_io/io_ascii.h src/common/maths/math_common.h src/common/file_io/io_factory.h src/common/file_io/io_hdf5.h src/common/utility/logger.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/basis_obs'
-#  Last modified 2022-07-03 15:02:51.50124701
+#  Last modified 2022-08-03 17:53:44.758220977
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4575,7 +4571,6 @@ obj/objects/observables/basis_obs.o: src/objects/observables/basis_obs.cpp src/o
 # + := src/objects/observables/basis_obs.cpp src/objects/observables/basis_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/file_io/io_ascii.h src/common/maths/math_common.h src/common/file_io/io_factory.h src/common/file_io/io_hdf5.h src/common/utility/logger.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h
 # automatic
 # % := 
- 
 # automatic
 # ^ := src/objects/observables/basis_obs.cpp src/objects/observables/basis_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/file_io/io_ascii.h src/common/maths/math_common.h src/common/file_io/io_factory.h src/common/file_io/io_hdf5.h src/common/utility/logger.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h
 # automatic
@@ -4606,7 +4601,7 @@ src/petsc/utility/petsc_profiler.cpp:
 dep/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x.d: src/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x.cpp | dep/objects/propagators/crank_nicolson/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x'
-#  Last modified 2022-08-03 17:15:22.573811059
+#  Last modified 2022-08-03 18:42:28.934504706
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4626,6 +4621,7 @@ dep/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_x.d: src/objects/p
 # automatic
 # | := 
 # variable set hash-table stats:
+ 
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 66):
 	@$(CPP) $(CPPFLAGS) $(EXTRAFLAGS) $< -MM -MT $(subst $(DDIR), $(ODIR), $(@:.d=.o)) >$@
@@ -4674,7 +4670,7 @@ obj/common/tdse/simulation_finalize.o: src/common/tdse/simulation_finalize.cpp s
 dep/common/tdse/simulation.d: src/common/tdse/simulation.cpp | dep/common/tdse/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tdse/simulation'
-#  Last modified 2022-08-03 17:15:20.010496326
+#  Last modified 2022-08-03 18:42:26.377762749
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4698,7 +4694,6 @@ dep/common/tdse/simulation.d: src/common/tdse/simulation.cpp | dep/common/tdse/
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 66):
 	@$(CPP) $(CPPFLAGS) $(EXTRAFLAGS) $< -MM -MT $(subst $(DDIR), $(ODIR), $(@:.d=.o)) >$@
 
- 
 # Not a target:
 src/common/utility/index_manip.h:
 #  Implicit rule search has been done.
@@ -4723,7 +4718,7 @@ src/common/bspline/bspline_initialize.cpp:
 dep/common/utility/factory.d: src/common/utility/factory.cpp | dep/common/utility/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/utility/factory'
-#  Last modified 2022-08-03 17:15:20.857156806
+#  Last modified 2022-08-03 18:42:27.224455205
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4750,6 +4745,7 @@ dep/common/utility/factory.d: src/common/utility/factory.cpp | dep/common/utilit
 # Not a target:
 src/common/tise/tise_compute_bound_state.cpp:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-07-03 01:10:50.683062434
 #  File has been updated.
 #  Successfully updated.
@@ -4757,7 +4753,7 @@ src/common/tise/tise_compute_bound_state.cpp:
 obj/common/objects/:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'obj/common/objects'
-#  Last modified 2022-07-03 15:03:38.205800737
+#  Last modified 2022-08-03 17:53:49.558318295
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 62):
@@ -4766,7 +4762,7 @@ obj/common/objects/:
 obj/objects/propagators/crank_nicolson/crank_nicolson.o: src/objects/propagators/crank_nicolson/crank_nicolson.cpp src/objects/propagators/crank_nicolson/crank_nicolson.cpp src/objects/propagators/crank_nicolson/crank_nicolson.h src/common/objects/propagator.h src/common/utility/factory.h src/common/utility/json.hpp src/common/maths/math_common.h src/common/maths/gmres_solver.h src/common/maths/vector.h src/common/maths/matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/profiler.h src/common/utility/timer.h src/common/maths/math_factory.h src/common/maths/math_algebra.h src/common/tdse/simulation.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/objects/propagators/crank_nicolson/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/propagators/crank_nicolson/crank_nicolson'
-#  Last modified 2022-07-03 15:03:07.354996824
+#  Last modified 2022-08-03 17:53:47.324939666
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4793,7 +4789,6 @@ obj/objects/propagators/crank_nicolson/crank_nicolson.o: src/objects/propagators
 # Not a target:
 src/common/maths/gmres_solver.h:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-06-22 18:45:35.043898434
 #  File has been updated.
 #  Successfully updated.
@@ -4801,7 +4796,7 @@ src/common/maths/gmres_solver.h:
 obj/objects/potentials/coulomb/coulomb_pot.o: src/objects/potentials/coulomb/coulomb_pot.cpp src/objects/potentials/coulomb/coulomb_pot.cpp src/objects/potentials/coulomb/coulomb_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/objects/potentials/coulomb/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/coulomb/coulomb_pot'
-#  Last modified 2022-07-03 15:03:15.558544754
+#  Last modified 2022-08-03 17:53:48.48829659
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4828,7 +4823,7 @@ obj/objects/potentials/coulomb/coulomb_pot.o: src/objects/potentials/coulomb/cou
 # Not a target:
 src/common/bspline/bspline.h:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-30 21:08:12.147971847
+#  Last modified 2022-08-03 17:53:34.778019034
 #  File has been updated.
 #  Successfully updated.
 
@@ -4837,6 +4832,7 @@ obj/common/system_state/system_state.o: src/common/system_state/system_state.cpp
 #  Implicit/static pattern stem: 'common/system_state/system_state'
 #  Last modified 2022-07-03 15:03:48.796074779
 #  File has been updated.
+ 
 #  Successfully updated.
 # automatic
 # @ := obj/common/system_state/system_state.o
@@ -4876,7 +4872,7 @@ src/objects/observables/norm_obs.cpp:
 dep/common/bspline/bspline_evaluate.d: src/common/bspline/bspline_evaluate.cpp | dep/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_evaluate'
-#  Last modified 2022-08-03 17:15:20.557158999
+#  Last modified 2022-08-03 18:42:26.921112806
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4898,13 +4894,12 @@ dep/common/bspline/bspline_evaluate.d: src/common/bspline/bspline_evaluate.cpp |
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 66):
- 
 	@$(CPP) $(CPPFLAGS) $(EXTRAFLAGS) $< -MM -MT $(subst $(DDIR), $(ODIR), $(@:.d=.o)) >$@
 
 dep/common/tise/tise_axial_pot.d: src/common/tise/tise_axial_pot.cpp | dep/common/tise/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tise/tise_axial_pot'
-#  Last modified 2022-08-03 17:15:19.600499346
+#  Last modified 2022-08-03 18:42:25.971083527
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4931,7 +4926,7 @@ dep/common/tise/tise_axial_pot.d: src/common/tise/tise_axial_pot.cpp | dep/commo
 obj/objects/potentials/yukawa/yukawa_pot.o: src/objects/potentials/yukawa/yukawa_pot.cpp src/objects/potentials/yukawa/yukawa_pot.cpp src/objects/potentials/yukawa/yukawa_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/potentials/yukawa/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/yukawa/yukawa_pot'
-#  Last modified 2022-07-03 15:03:17.795269829
+#  Last modified 2022-08-03 17:53:48.688300646
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -4958,7 +4953,8 @@ obj/objects/potentials/yukawa/yukawa_pot.o: src/objects/potentials/yukawa/yukawa
 dep/objects/observables/debug_eigenstates.d: src/objects/observables/debug_eigenstates.cpp | dep/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/debug_eigenstates'
-#  Last modified 2022-08-03 17:15:23.290472595
+#  Last modified 2022-08-03 18:42:29.657857908
+ 
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5002,7 +4998,6 @@ obj/common/tise/tise_compute_bound_state.o: src/common/tise/tise_compute_bound_s
 # ^ := src/common/tise/tise_compute_bound_state.cpp src/common/tise/tise.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/utility/factory.h src/common/file_io/io_factory.h src/common/file_io/io_ascii.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h src/common/utility/logger.h
 # automatic
 # ? := 
- 
 # automatic
 # | := 
 # variable set hash-table stats:
@@ -5040,7 +5035,7 @@ obj/bspline_tdse_main.o: src/bspline_tdse_main.cpp | obj/
 obj/objects/observables/ionization_obs.o: src/objects/observables/ionization_obs.cpp src/objects/observables/ionization_obs.cpp src/objects/observables/ionization_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/maths/math_common.h src/common/file_io/io_ascii.h src/common/utility/logger.h src/common/utility/index_manip.h src/common/utility/banded_matrix.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/file_io/io_factory.h src/common/maths/math_algebra.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/ionization_obs'
-#  Last modified 2022-07-03 22:54:52.558066256
+#  Last modified 2022-08-03 17:53:44.81155539
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5071,10 +5066,11 @@ src/objects/observables/debug_eigenstates.h:
 #  File has been updated.
 #  Successfully updated.
 
+ 
 obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_y.o: src/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_y.cpp src/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_y.cpp src/objects/propagators/crank_nicolson/crank_nicolson.h src/common/objects/propagator.h src/common/utility/factory.h src/common/utility/json.hpp src/common/maths/math_common.h src/common/maths/gmres_solver.h src/common/maths/vector.h src/common/maths/matrix.h src/common/utility/index_manip.h src/common/utility/spherical_harmonics.h src/common/utility/logger.h src/common/utility/banded_matrix.h src/common/tdse/simulation.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/objects/propagators/crank_nicolson/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/propagators/crank_nicolson/crank_nicolson_fill_HI_y'
-#  Last modified 2022-07-03 15:03:01.198168692
+#  Last modified 2022-08-03 17:53:45.961578695
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5098,7 +5094,6 @@ obj/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_y.o: src/objects/p
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 76):
 	$(CXX) $(CPPFLAGS) $(EXTRAFLAGS) -c $< -o $@
 
- 
 obj/common/tdse/simulation_validate_basis.o: src/common/tdse/simulation_validate_basis.cpp src/common/tdse/simulation_validate_basis.cpp src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/utility/factory.h src/common/utility/json.hpp src/common/objects/observable.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/utility/logger.h src/common/utility/to_lower.h | obj/common/tdse/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tdse/simulation_validate_basis'
@@ -5136,7 +5131,7 @@ src/bspline_tdse_main.cpp:
 obj/objects/observables/population_obs.o: src/objects/observables/population_obs.cpp src/objects/observables/population_obs.cpp src/objects/observables/population_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/maths/math_common.h src/common/file_io/io_ascii.h src/common/utility/logger.h src/common/utility/index_manip.h src/common/utility/banded_matrix.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/file_io/io_factory.h src/common/maths/math_algebra.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/population_obs'
-#  Last modified 2022-07-03 15:02:59.181449061
+#  Last modified 2022-08-03 17:53:46.268251578
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5156,6 +5151,7 @@ obj/objects/observables/population_obs.o: src/objects/observables/population_obs
 # automatic
 # | := 
 # variable set hash-table stats:
+ 
 # Load=8/32=25%, Rehash=0, Collisions=1/14=7%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 76):
 	$(CXX) $(CPPFLAGS) $(EXTRAFLAGS) -c $< -o $@
@@ -5163,7 +5159,7 @@ obj/objects/observables/population_obs.o: src/objects/observables/population_obs
 obj/objects/potentials/yukawa/yukawa_pot_z.o: src/objects/potentials/yukawa/yukawa_pot_z.cpp src/objects/potentials/yukawa/yukawa_pot_z.cpp src/objects/potentials/yukawa/yukawa_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/potentials/yukawa/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/yukawa/yukawa_pot_z'
-#  Last modified 2022-07-03 15:03:18.7252941
+#  Last modified 2022-08-03 17:53:48.391627963
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5190,7 +5186,7 @@ obj/objects/potentials/yukawa/yukawa_pot_z.o: src/objects/potentials/yukawa/yuka
 dep/common/tise/tise_load.d: src/common/tise/tise_load.cpp | dep/common/tise/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tise/tise_load'
-#  Last modified 2022-08-03 17:15:19.447167142
+#  Last modified 2022-08-03 18:42:25.811078396
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5211,7 +5207,6 @@ dep/common/tise/tise_load.d: src/common/tise/tise_load.cpp | dep/common/tise/
 # | := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
- 
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 66):
 	@$(CPP) $(CPPFLAGS) $(EXTRAFLAGS) $< -MM -MT $(subst $(DDIR), $(ODIR), $(@:.d=.o)) >$@
 
@@ -5252,7 +5247,7 @@ obj/common/utility/wigner3j/wigner3j_gcf.o: src/common/utility/wigner3j/wigner3j
 dep/objects/potentials/coulomb/coulomb_grad_z.d: src/objects/potentials/coulomb/coulomb_grad_z.cpp | dep/objects/potentials/coulomb/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/coulomb/coulomb_grad_z'
-#  Last modified 2022-08-03 17:15:22.107147747
+#  Last modified 2022-08-03 18:42:28.481158483
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5285,6 +5280,7 @@ src/common/bspline/bspline_gauss_quad.h:
 
 # Not a target:
 src/petsc/maths/petsc_matrix.cpp:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2022-07-01 16:20:19.52055899
 #  File has been updated.
@@ -5316,7 +5312,7 @@ obj/input/:
 obj/common/tise/tise_load.o: src/common/tise/tise_load.cpp src/common/tise/tise_load.cpp src/common/tise/tise.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/utility/factory.h src/common/utility/logger.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/common/tise/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tise/tise_load'
-#  Last modified 2022-07-03 15:04:02.763101425
+#  Last modified 2022-08-03 17:53:51.568359082
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5334,7 +5330,6 @@ obj/common/tise/tise_load.o: src/common/tise/tise_load.cpp src/common/tise/tise_
 # automatic
 # ? := 
 # automatic
- 
 # | := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/14=7%
@@ -5392,10 +5387,11 @@ src/petsc/maths/petsc_gmres.cpp:
 dep/objects/propagators/crank_nicolson/crank_nicolson_fill_U0.d: src/objects/propagators/crank_nicolson/crank_nicolson_fill_U0.cpp | dep/objects/propagators/crank_nicolson/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/propagators/crank_nicolson/crank_nicolson_fill_U0'
-#  Last modified 2022-08-03 17:15:22.6238107
+#  Last modified 2022-08-03 18:42:28.984506127
 #  File has been updated.
 #  Successfully updated.
 # automatic
+ 
 # @ := dep/objects/propagators/crank_nicolson/crank_nicolson_fill_U0.d
 # automatic
 # * := objects/propagators/crank_nicolson/crank_nicolson_fill_U0
@@ -5426,7 +5422,7 @@ src/petsc/utility/petsc_profiler.h:
 obj/common/tise/tise_validate.o: src/common/tise/tise_validate.cpp src/common/tise/tise_validate.cpp src/common/tise/tise.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/utility/factory.h src/common/utility/logger.h src/common/utility/to_lower.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h | obj/common/tise/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tise/tise_validate'
-#  Last modified 2022-07-03 15:04:04.949824305
+#  Last modified 2022-08-03 17:53:51.865031772
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5436,7 +5432,6 @@ obj/common/tise/tise_validate.o: src/common/tise/tise_validate.cpp src/common/ti
 # automatic
 # < := src/common/tise/tise_validate.cpp
 # automatic
- 
 # + := src/common/tise/tise_validate.cpp src/common/tise/tise.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/utility/factory.h src/common/utility/logger.h src/common/utility/to_lower.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h
 # automatic
 # % := 
@@ -5454,7 +5449,7 @@ obj/common/tise/tise_validate.o: src/common/tise/tise_validate.cpp src/common/ti
 obj/objects/potentials/coulomb/coulomb_grad_y.o: src/objects/potentials/coulomb/coulomb_grad_y.cpp src/objects/potentials/coulomb/coulomb_grad_y.cpp src/objects/potentials/coulomb/coulomb_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/potentials/coulomb/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/coulomb/coulomb_grad_y'
-#  Last modified 2022-07-03 15:03:16.498569308
+#  Last modified 2022-08-03 17:53:48.198290707
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5481,7 +5476,7 @@ obj/objects/potentials/coulomb/coulomb_grad_y.o: src/objects/potentials/coulomb/
 obj/common/bspline/bspline_static_interface.o: src/common/bspline/bspline_static_interface.cpp src/common/bspline/bspline_static_interface.cpp src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/maths/math_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/utility/json.hpp src/common/utility/factory.h src/common/bspline/bspline_ecs.h | obj/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_static_interface'
-#  Last modified 2022-07-03 15:03:39.145825102
+#  Last modified 2022-08-03 17:53:49.154976779
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5491,6 +5486,7 @@ obj/common/bspline/bspline_static_interface.o: src/common/bspline/bspline_static
 # automatic
 # < := src/common/bspline/bspline_static_interface.cpp
 # automatic
+ 
 # + := src/common/bspline/bspline_static_interface.cpp src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/maths/math_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/utility/json.hpp src/common/utility/factory.h src/common/bspline/bspline_ecs.h
 # automatic
 # % := 
@@ -5508,7 +5504,6 @@ obj/common/bspline/bspline_static_interface.o: src/common/bspline/bspline_static
 # Not a target:
 src/objects/potentials/yukawa/yukawa_axial.cpp:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-06-28 00:23:49.663332497
 #  File has been updated.
 #  Successfully updated.
@@ -5534,7 +5529,7 @@ dep/objects/observables/:
 dep/objects/potentials/exponential/exponential_pot_z.d: src/objects/potentials/exponential/exponential_pot_z.cpp | dep/objects/potentials/exponential/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/exponential/exponential_pot_z'
-#  Last modified 2022-08-03 17:15:22.313812927
+#  Last modified 2022-08-03 18:42:28.68116417
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5561,7 +5556,7 @@ dep/objects/potentials/exponential/exponential_pot_z.d: src/objects/potentials/e
 obj/objects/potentials/coulomb/coulomb_grad_x.o: src/objects/potentials/coulomb/coulomb_grad_x.cpp src/objects/potentials/coulomb/coulomb_grad_x.cpp src/objects/potentials/coulomb/coulomb_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/potentials/coulomb/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/coulomb/coulomb_grad_x'
-#  Last modified 2022-07-03 15:03:14.261844209
+#  Last modified 2022-08-03 17:53:48.111622284
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5588,7 +5583,7 @@ obj/objects/potentials/coulomb/coulomb_grad_x.o: src/objects/potentials/coulomb/
 dep/common/tise/tise_validate.d: src/common/tise/tise_validate.cpp | dep/common/tise/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tise/tise_validate'
-#  Last modified 2022-08-03 17:15:19.340501261
+#  Last modified 2022-08-03 18:42:25.704408308
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5601,6 +5596,7 @@ dep/common/tise/tise_validate.d: src/common/tise/tise_validate.cpp | dep/common/
 # + := 
 # automatic
 # % := 
+ 
 # automatic
 # ^ := 
 # automatic
@@ -5622,7 +5618,7 @@ src/common/bspline/bspline_gauss_quad.cpp:
 dep/common/utility/wigner3j/wigner3j_gcf.d: src/common/utility/wigner3j/wigner3j_gcf.cpp | dep/common/utility/wigner3j/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/utility/wigner3j/wigner3j_gcf'
-#  Last modified 2022-08-03 17:15:20.990489165
+#  Last modified 2022-08-03 18:42:27.351125617
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5649,7 +5645,7 @@ dep/common/utility/wigner3j/wigner3j_gcf.d: src/common/utility/wigner3j/wigner3j
 dep/petsc/maths/petsc_vector.d: src/petsc/maths/petsc_vector.cpp | dep/petsc/maths/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'petsc/maths/petsc_vector'
-#  Last modified 2022-08-03 17:15:21.493818851
+#  Last modified 2022-08-03 18:42:27.864474129
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5690,8 +5686,7 @@ src/common/utility/timer.h:
 dep/common/utility/wigner3j/wigner3j_fraction.d: src/common/utility/wigner3j/wigner3j_fraction.cpp | dep/common/utility/wigner3j/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/utility/wigner3j/wigner3j_fraction'
-#  Last modified 2022-08-03 17:15:20.947156149
- 
+#  Last modified 2022-08-03 18:42:27.311124434
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5725,6 +5720,7 @@ src/common/objects/pulse.cpp:
 # Not a target:
 src/common/objects/pulse.h:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-06-25 12:30:46.426129059
 #  File has been updated.
 #  Successfully updated.
@@ -5766,7 +5762,7 @@ obj/petsc/maths/petsc_matrix.o: src/petsc/maths/petsc_matrix.cpp src/petsc/maths
 dep/petsc/maths/petsc_gmres.d: src/petsc/maths/petsc_gmres.cpp | dep/petsc/maths/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'petsc/maths/petsc_gmres'
-#  Last modified 2022-08-03 17:15:21.590484819
+#  Last modified 2022-08-03 18:42:27.964477086
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5800,7 +5796,7 @@ src/common/utility/spherical_harmonics.h:
 obj/objects/observables/potential_obs.o: src/objects/observables/potential_obs.cpp src/objects/observables/potential_obs.cpp src/objects/observables/potential_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/file_io/io_ascii.h src/common/file_io/io_factory.h src/common/file_io/io_hdf5.h src/common/maths/math_common.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_factory.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/utility/logger.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/potential_obs'
-#  Last modified 2022-07-03 15:02:55.311347316
+#  Last modified 2022-08-03 17:53:46.111581735
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5841,7 +5837,6 @@ obj/common/objects/observable.o: src/common/objects/observable.cpp src/common/ob
 # automatic
 # % := 
 # automatic
- 
 # ^ := src/common/objects/observable.cpp src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h
 # automatic
 # ? := 
@@ -5855,7 +5850,7 @@ obj/common/objects/observable.o: src/common/objects/observable.cpp src/common/ob
 dep/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_y.d: src/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_y.cpp | dep/objects/propagators/crank_nicolson/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/propagators/crank_nicolson/crank_nicolson_fill_HI_y'
-#  Last modified 2022-08-03 17:15:22.677143651
+#  Last modified 2022-08-03 18:42:29.034507515
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5923,6 +5918,7 @@ obj/common/utility/spherical_harmonics.o: src/common/utility/spherical_harmonics
 # Not a target:
 src/common/maths/eigen_solver.cpp:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-07-02 23:45:24.739693165
 #  File has been updated.
 #  Successfully updated.
@@ -5930,7 +5926,7 @@ src/common/maths/eigen_solver.cpp:
 dep/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_z.d: src/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_z.cpp | dep/objects/propagators/crank_nicolson/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/propagators/crank_nicolson/crank_nicolson_fill_HI_z'
-#  Last modified 2022-08-03 17:15:22.42047883
+#  Last modified 2022-08-03 18:42:28.78450044
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -5962,7 +5958,7 @@ dep/objects/propagators/crank_nicolson/crank_nicolson_fill_HI_z.d: src/objects/p
 obj/objects/potentials/yukawa/:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'obj/objects/potentials/yukawa'
-#  Last modified 2022-07-03 15:03:20.595342879
+#  Last modified 2022-08-03 17:53:48.661633437
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 62):
@@ -6003,7 +5999,7 @@ src/objects/observables/density_obs.h:
 dep/common/utility/index_manip.d: src/common/utility/index_manip.cpp | dep/common/utility/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/utility/index_manip'
-#  Last modified 2022-08-03 17:15:21.077155203
+#  Last modified 2022-08-03 18:42:27.447795142
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6037,7 +6033,7 @@ src/common/objects/potential.h:
 obj/objects/potentials/yukawa/yukawa_pot_x.o: src/objects/potentials/yukawa/yukawa_pot_x.cpp src/objects/potentials/yukawa/yukawa_pot_x.cpp src/objects/potentials/yukawa/yukawa_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/potentials/yukawa/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/yukawa/yukawa_pot_x'
-#  Last modified 2022-07-03 15:03:19.681985726
+#  Last modified 2022-08-03 17:53:48.408294966
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6047,7 +6043,6 @@ obj/objects/potentials/yukawa/yukawa_pot_x.o: src/objects/potentials/yukawa/yuka
 # automatic
 # < := src/objects/potentials/yukawa/yukawa_pot_x.cpp
 # automatic
- 
 # + := src/objects/potentials/yukawa/yukawa_pot_x.cpp src/objects/potentials/yukawa/yukawa_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h
 # automatic
 # % := 
@@ -6055,6 +6050,7 @@ obj/objects/potentials/yukawa/yukawa_pot_x.o: src/objects/potentials/yukawa/yuka
 # ^ := src/objects/potentials/yukawa/yukawa_pot_x.cpp src/objects/potentials/yukawa/yukawa_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/observable.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h
 # automatic
 # ? := 
+ 
 # automatic
 # | := 
 # variable set hash-table stats:
@@ -6086,7 +6082,7 @@ src/common/tdse/simulation_step.cpp:
 dep/common/tise/tise_central_pot.d: src/common/tise/tise_central_pot.cpp | dep/common/tise/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tise/tise_central_pot'
-#  Last modified 2022-08-03 17:15:19.397167512
+#  Last modified 2022-08-03 18:42:25.761076791
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6113,7 +6109,7 @@ dep/common/tise/tise_central_pot.d: src/common/tise/tise_central_pot.cpp | dep/c
 obj/objects/potentials/coulomb/:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'obj/objects/potentials/coulomb'
-#  Last modified 2022-07-03 15:03:16.478568783
+#  Last modified 2022-08-03 17:53:48.421628572
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 62):
@@ -6143,7 +6139,7 @@ src/objects/potentials/exponential/exponential_pot_z.cpp:
 dep/common/utility/banded_matrix.d: src/common/utility/banded_matrix.cpp | dep/common/utility/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/utility/banded_matrix'
-#  Last modified 2022-08-03 17:15:20.920489676
+#  Last modified 2022-08-03 18:42:27.284456979
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6177,12 +6173,13 @@ src/common/utility/logger.h:
 obj/common/tdse/simulation_check_symmetry.o: src/common/tdse/simulation_check_symmetry.cpp src/common/tdse/simulation_check_symmetry.cpp src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_common.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/utility/factory.h src/common/utility/json.hpp src/common/objects/observable.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/system_state/system_state.h src/common/maths/eigen_solver.h src/common/utility/logger.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/common/tdse/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tdse/simulation_check_symmetry'
-#  Last modified 2022-07-03 15:03:57.679637261
+#  Last modified 2022-08-03 17:53:50.825010663
 #  File has been updated.
 #  Successfully updated.
 # automatic
 # @ := obj/common/tdse/simulation_check_symmetry.o
 # automatic
+ 
 # * := common/tdse/simulation_check_symmetry
 # automatic
 # < := src/common/tdse/simulation_check_symmetry.cpp
@@ -6211,7 +6208,7 @@ src/petsc/maths/petsc_math_factory.h:
 obj/common/bspline/bspline_validate.o: src/common/bspline/bspline_validate.cpp src/common/bspline/bspline_validate.cpp src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/maths/math_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/utility/json.hpp src/common/utility/factory.h src/common/bspline/bspline_ecs.h src/common/utility/logger.h | obj/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_validate'
-#  Last modified 2022-07-03 15:03:47.712713456
+#  Last modified 2022-08-03 17:53:50.415002343
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6245,7 +6242,7 @@ src/common/tise/tise.cpp:
 dep/common/bspline/bspline_sequence.d: src/common/bspline/bspline_sequence.cpp | dep/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_sequence'
-#  Last modified 2022-08-03 17:15:20.507159363
+#  Last modified 2022-08-03 18:42:26.867777831
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6280,7 +6277,7 @@ dep/common/objects/observable.d: src/common/objects/observable.cpp | dep/common/
 #  Implicit rule search has been done.
  
 #  Implicit/static pattern stem: 'common/objects/observable'
-#  Last modified 2022-08-03 17:15:20.707157902
+#  Last modified 2022-08-03 18:42:27.07445077
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6405,6 +6402,7 @@ src/common/maths/math_common.h:
 
 # Not a target:
 src/objects/observables/density_obs.cpp:
+ 
 #  Implicit rule search has been done.
 #  Last modified 2022-07-01 15:27:50.107272636
 #  File has been updated.
@@ -6413,7 +6411,7 @@ src/objects/observables/density_obs.cpp:
 dep/common/tdse/simulation_check_symmetry.d: src/common/tdse/simulation_check_symmetry.cpp | dep/common/tdse/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/tdse/simulation_check_symmetry'
-#  Last modified 2022-08-03 17:15:19.700498609
+#  Last modified 2022-08-03 18:42:26.071086644
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6474,7 +6472,7 @@ src/common/system_state/system_state.h:
 dep/objects/observables/ionization_obs.d: src/objects/observables/ionization_obs.cpp | dep/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/ionization_obs'
-#  Last modified 2022-08-03 17:15:23.033807757
+#  Last modified 2022-08-03 18:42:29.401184216
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6494,7 +6492,6 @@ dep/objects/observables/ionization_obs.d: src/objects/observables/ionization_obs
 # automatic
 # | := 
 # variable set hash-table stats:
- 
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 66):
 	@$(CPP) $(CPPFLAGS) $(EXTRAFLAGS) $< -MM -MT $(subst $(DDIR), $(ODIR), $(@:.d=.o)) >$@
@@ -6502,7 +6499,7 @@ dep/objects/observables/ionization_obs.d: src/objects/observables/ionization_obs
 obj/objects/observables/norm_obs.o: src/objects/observables/norm_obs.cpp src/objects/observables/norm_obs.cpp src/objects/observables/norm_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/maths/math_common.h src/common/file_io/io_ascii.h src/common/utility/logger.h src/common/utility/file_exists.h src/common/utility/banded_matrix.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/maths/math_algebra.h src/common/file_io/io_factory.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/norm_obs'
-#  Last modified 2022-07-03 15:02:54.071314686
+#  Last modified 2022-08-03 17:53:44.764887779
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6512,6 +6509,7 @@ obj/objects/observables/norm_obs.o: src/objects/observables/norm_obs.cpp src/obj
 # automatic
 # < := src/objects/observables/norm_obs.cpp
 # automatic
+ 
 # + := src/objects/observables/norm_obs.cpp src/objects/observables/norm_obs.h src/common/objects/observable.h src/common/utility/json.hpp src/common/utility/factory.h src/common/maths/math_common.h src/common/file_io/io_ascii.h src/common/utility/logger.h src/common/utility/file_exists.h src/common/utility/banded_matrix.h src/common/tdse/simulation.h src/common/maths/vector.h src/common/maths/math_factory.h src/common/file_io/io_hdf5.h src/common/objects/pulse.h src/common/utility/vec3.h src/common/objects/propagator.h src/common/objects/initial_state.h src/common/objects/potential.h src/common/maths/matrix.h src/common/maths/math_algebra.h src/common/file_io/io_factory.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h
 # automatic
 # % := 
@@ -6555,7 +6553,7 @@ src/objects/observables/debug_wavefunction_obs.cpp:
 dep/objects/potentials/exponential/exponential_pot_y.d: src/objects/potentials/exponential/exponential_pot_y.cpp | dep/objects/potentials/exponential/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/exponential/exponential_pot_y'
-#  Last modified 2022-08-03 17:15:22.210480337
+#  Last modified 2022-08-03 18:42:28.581161327
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6582,7 +6580,7 @@ dep/objects/potentials/exponential/exponential_pot_y.d: src/objects/potentials/e
 obj/objects/propagators/crank_nicolson/:
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'obj/objects/propagators/crank_nicolson'
-#  Last modified 2022-07-03 15:03:07.304995512
+#  Last modified 2022-08-03 17:53:47.271605251
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 62):
@@ -6591,7 +6589,7 @@ obj/objects/propagators/crank_nicolson/:
 dep/petsc/file_io/petsc_io_factory.d: src/petsc/file_io/petsc_io_factory.cpp | dep/petsc/file_io/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'petsc/file_io/petsc_io_factory'
-#  Last modified 2022-08-03 17:15:21.2938203
+#  Last modified 2022-08-03 18:42:27.664468215
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6618,11 +6616,12 @@ dep/petsc/file_io/petsc_io_factory.d: src/petsc/file_io/petsc_io_factory.cpp | d
 dep/objects/observables/wavefunction_obs.d: src/objects/observables/wavefunction_obs.cpp | dep/objects/observables/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/observables/wavefunction_obs'
-#  Last modified 2022-08-03 17:15:23.390471882
+#  Last modified 2022-08-03 18:42:29.761194069
 #  File has been updated.
 #  Successfully updated.
 # automatic
 # @ := dep/objects/observables/wavefunction_obs.d
+ 
 # automatic
 # * := objects/observables/wavefunction_obs
 # automatic
@@ -6644,7 +6643,6 @@ dep/objects/observables/wavefunction_obs.d: src/objects/observables/wavefunction
 
 obj/petsc/file_io/petsc_hdf5.o: src/petsc/file_io/petsc_hdf5.cpp src/petsc/file_io/petsc_hdf5.cpp src/petsc/file_io/petsc_hdf5.h src/common/file_io/io_hdf5.h src/common/maths/math_common.h src/common/maths/vector.h src/petsc/maths/petsc_common.h src/petsc/maths/petsc_math_factory.h src/common/maths/math_factory.h src/petsc/maths/petsc_vector.h src/petsc/maths/petsc_matrix.h src/common/maths/matrix.h | obj/petsc/file_io/
 #  Implicit rule search has been done.
- 
 #  Implicit/static pattern stem: 'petsc/file_io/petsc_hdf5'
 #  Last modified 2022-07-03 15:03:26.74550309
 #  File has been updated.
@@ -6673,7 +6671,7 @@ obj/petsc/file_io/petsc_hdf5.o: src/petsc/file_io/petsc_hdf5.cpp src/petsc/file_
 dep/objects/potentials/yukawa/yukawa_pot_z.d: src/objects/potentials/yukawa/yukawa_pot_z.cpp | dep/objects/potentials/yukawa/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/yukawa/yukawa_pot_z'
-#  Last modified 2022-08-03 17:15:21.790483368
+#  Last modified 2022-08-03 18:42:28.167816241
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6707,7 +6705,7 @@ src/common/utility/wigner3j/wigner3j_gcf.cpp:
 obj/objects/potentials/coulomb/coulomb_axial.o: src/objects/potentials/coulomb/coulomb_axial.cpp src/objects/potentials/coulomb/coulomb_axial.cpp src/objects/potentials/coulomb/coulomb_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/potentials/coulomb/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/coulomb/coulomb_axial'
-#  Last modified 2022-07-03 15:03:13.311819375
+#  Last modified 2022-08-03 17:53:48.09495528
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6734,7 +6732,8 @@ obj/objects/potentials/coulomb/coulomb_axial.o: src/objects/potentials/coulomb/c
 dep/common/bspline/bspline_static_interface.d: src/common/bspline/bspline_static_interface.cpp | dep/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_static_interface'
-#  Last modified 2022-08-03 17:15:20.607158632
+ 
+#  Last modified 2022-08-03 18:42:26.974447781
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6788,7 +6787,6 @@ obj/petsc/maths/petsc_gmres.o: src/petsc/maths/petsc_gmres.cpp src/petsc/maths/p
 # automatic
 # | := 
 # variable set hash-table stats:
- 
 # Load=8/32=25%, Rehash=0, Collisions=1/14=7%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 76):
 	$(CXX) $(CPPFLAGS) $(EXTRAFLAGS) -c $< -o $@
@@ -6796,7 +6794,7 @@ obj/petsc/maths/petsc_gmres.o: src/petsc/maths/petsc_gmres.cpp src/petsc/maths/p
 dep/common/objects/pulse.d: src/common/objects/pulse.cpp | dep/common/objects/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/objects/pulse'
-#  Last modified 2022-08-03 17:15:20.757157537
+#  Last modified 2022-08-03 18:42:27.124452248
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6842,6 +6840,7 @@ obj/input/validate_input.o: src/input/validate_input.cpp src/input/validate_inpu
 # ? := 
 # automatic
 # | := 
+ 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/14=7%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 76):
@@ -6864,7 +6863,7 @@ src/common/objects/propagator.h:
 dep/objects/potentials/yukawa/yukawa_axial.d: src/objects/potentials/yukawa/yukawa_axial.cpp | dep/objects/potentials/yukawa/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/yukawa/yukawa_axial'
-#  Last modified 2022-08-03 17:15:21.850482933
+#  Last modified 2022-08-03 18:42:28.224484519
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6891,7 +6890,7 @@ dep/objects/potentials/yukawa/yukawa_axial.d: src/objects/potentials/yukawa/yuka
 dep/objects/pulses/sin2pulse.d: src/objects/pulses/sin2pulse.cpp | dep/objects/pulses/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/pulses/sin2pulse'
-#  Last modified 2022-08-03 17:15:21.640484455
+#  Last modified 2022-08-03 18:42:28.014478548
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6918,7 +6917,7 @@ dep/objects/pulses/sin2pulse.d: src/objects/pulses/sin2pulse.cpp | dep/objects/p
 obj/common/bspline/bspline_integrate.o: src/common/bspline/bspline_integrate.cpp src/common/bspline/bspline_integrate.cpp src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/maths/math_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/utility/json.hpp src/common/utility/factory.h src/common/bspline/bspline_ecs.h | obj/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_integrate'
-#  Last modified 2022-07-03 15:03:45.502656327
+#  Last modified 2022-08-03 17:53:49.704987935
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6941,12 +6940,11 @@ obj/common/bspline/bspline_integrate.o: src/common/bspline/bspline_integrate.cpp
 # Load=8/32=25%, Rehash=0, Collisions=1/14=7%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 76):
 	$(CXX) $(CPPFLAGS) $(EXTRAFLAGS) -c $< -o $@
- 
 
 dep/common/bspline/bspline_coeff_matrix.d: src/common/bspline/bspline_coeff_matrix.cpp | dep/common/bspline/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'common/bspline/bspline_coeff_matrix'
-#  Last modified 2022-08-03 17:15:20.403826787
+#  Last modified 2022-08-03 18:42:26.767774752
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -6965,6 +6963,7 @@ dep/common/bspline/bspline_coeff_matrix.d: src/common/bspline/bspline_coeff_matr
 # ? := 
 # automatic
 # | := 
+ 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/11=9%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 66):
@@ -6982,7 +6981,7 @@ dep/objects/propagators/crank_nicolson/:
 obj/objects/potentials/exponential/exponential_pot_z.o: src/objects/potentials/exponential/exponential_pot_z.cpp src/objects/potentials/exponential/exponential_pot_z.cpp src/objects/potentials/exponential/exponential_pot.h src/common/objects/potential.h src/common/utility/json.hpp src/common/maths/matrix.h src/common/maths/math_common.h src/common/utility/factory.h src/common/utility/banded_matrix.h src/common/utility/index_manip.h src/common/utility/logger.h src/common/utility/spherical_harmonics.h src/common/bspline/bspline.h src/common/bspline/bspline_common.h src/common/bspline/bspline_gauss_quad.h src/common/bspline/bspline_sequence.h src/common/bspline/bspline_ecs.h | obj/objects/potentials/exponential/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/exponential/exponential_pot_z'
-#  Last modified 2022-07-03 15:03:08.315021967
+#  Last modified 2022-08-03 17:53:47.041600588
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -7009,7 +7008,7 @@ obj/objects/potentials/exponential/exponential_pot_z.o: src/objects/potentials/e
 dep/input/validate_input.d: src/input/validate_input.cpp | dep/input/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'input/validate_input'
-#  Last modified 2022-08-03 17:15:21.223820807
+#  Last modified 2022-08-03 18:42:27.597799576
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -7065,12 +7064,12 @@ obj/common/utility/wigner3j/wigner3j.o: src/common/utility/wigner3j/wigner3j.cpp
 # automatic
 # | := 
 # variable set hash-table stats:
- 
 # Load=8/32=25%, Rehash=0, Collisions=1/14=7%
 #  recipe to execute (from '/home/bghomashi/Documents/projects/tdse_bspline/Makefile', line 76):
 	$(CXX) $(CPPFLAGS) $(EXTRAFLAGS) -c $< -o $@
 
 # Not a target:
+ 
 src/objects/observables/population_obs.h:
 #  Implicit rule search has been done.
 #  Last modified 2022-07-02 01:05:37.244602281
@@ -7080,7 +7079,7 @@ src/objects/observables/population_obs.h:
 dep/objects/potentials/yukawa/yukawa_pot.d: src/objects/potentials/yukawa/yukawa_pot.cpp | dep/objects/potentials/yukawa/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/potentials/yukawa/yukawa_pot'
-#  Last modified 2022-08-03 17:15:21.843816314
+#  Last modified 2022-08-03 18:42:28.217817664
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -7123,7 +7122,7 @@ src/objects/potentials/yukawa/yukawa_pot_x.cpp:
 dep/objects/propagators/crank_nicolson/crank_nicolson_validate.d: src/objects/propagators/crank_nicolson/crank_nicolson_validate.cpp | dep/objects/propagators/crank_nicolson/
 #  Implicit rule search has been done.
 #  Implicit/static pattern stem: 'objects/propagators/crank_nicolson/crank_nicolson_validate'
-#  Last modified 2022-08-03 17:15:22.473811778
+#  Last modified 2022-08-03 18:42:28.834501863
 #  File has been updated.
 #  Successfully updated.
 # automatic
@@ -7163,6 +7162,6 @@ dep/objects/propagators/crank_nicolson/crank_nicolson_validate.d: src/objects/pr
 # strcache performance: lookups = 4220 / hit rate = 73%
 # hash-table stats:
 # Load=1128/8192=14%, Rehash=0, Collisions=165/4220=4%
-# Finished Make data base on Wed Aug  3 17:15:23 2022
+# Finished Make data base on Wed Aug  3 18:42:29 2022
 
  

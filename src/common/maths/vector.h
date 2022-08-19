@@ -53,6 +53,12 @@ namespace maths {
         // that the scalar product of two vectors. result is stored in
         // (scalar) value.
         virtual void Dot(const Vector b, complex& value) const = 0;
+        // get the max element of the vector
+        virtual double Max() const = 0;
+        // get the max element of the vector
+        virtual double Min() const = 0;
+        // get the max element of the vector
+        virtual void Abs() = 0;
 
 
         // basically only for PETSc...

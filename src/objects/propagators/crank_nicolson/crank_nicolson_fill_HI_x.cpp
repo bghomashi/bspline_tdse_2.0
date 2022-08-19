@@ -27,9 +27,9 @@ void CrankNicolson::FillInteractionX(Matrix& HI) {
     BandedMatrix ddr(N, 2*order-1), invR(N, 2*order-1);
     
     for (int r = 0; r < N; r++) {
-        for (int c = 0; c < std::min(N, r+order); c++) {
+        for (int c = r; c < std::min(N, r+order); c++) {
             ddr(r, c) = bspline::Basis::Integrate(r+1, c+1, 0, 1);
-            ddr(r, c) = bspline::Basis::Integrate(c+1, r+1, 0, 1);
+            ddr(c, r) = bspline::Basis::Integrate(c+1, r+1, 0, 1);
             invR(r, c) = invR(c, r) = bspline::Basis::Integrate(r+1, c+1, [](complex x) {
                 return 1./x;
             });

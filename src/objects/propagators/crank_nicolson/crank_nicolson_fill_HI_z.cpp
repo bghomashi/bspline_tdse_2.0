@@ -26,7 +26,7 @@ void CrankNicolson::FillInteractionZ(Matrix& HI) {
     
     // ----------------- cache some common matrix elements -----------
     for (int r = 0; r < N; r++) {
-        for (int c = 0; c < std::min(N, r+order); c++) {
+        for (int c = r; c < std::min(N, r+order); c++) {
             ddr(r, c)  = bspline::Basis::Integrate(r+1, c+1, 0, 1);           // <Bi|d/dr|Bj>
             ddr(c, r)  = bspline::Basis::Integrate(c+1, r+1, 0, 1);           // <Bi|d/dr|Bj>
             invR(r, c) = invR(c, r) = bspline::Basis::Integrate(r+1, c+1, [](complex x) {  // <Bi|1/r|Bj>

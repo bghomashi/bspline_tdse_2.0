@@ -33,6 +33,7 @@ public:
     void FillMatrixGradY(maths::Matrix m, int N, int lmax, const std::vector<int>& Ms = {0}, const std::vector<int>& mRows = {0});
     void FillMatrixGradZ(maths::Matrix m, int N, int lmax, const std::vector<int>& Ms = {0}, const std::vector<int>& mRows = {0});
 
+    const std::string Name() const;
     static std::string GetName();
     static tdse::Potential::Ptr_t Create(const nlohmann::json& observable);
     static bool Validate(const nlohmann::json& observable);
