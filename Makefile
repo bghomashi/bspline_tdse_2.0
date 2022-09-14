@@ -28,6 +28,7 @@ $(info Executables="$(BINS)")
 EXTRAFLAGS = -g -O0 
 #CPPFLAGS =  -DGLEW_STATIC -Iinc -IGL -I../freetype2 -I/usr/local/include/freetype2
 CPPFLAGS =      -D__STDCPP_WANT_MATH_SPEC_FUNCS__ \
+				-DCL_TARGET_OPENCL_VERSION=300 \
 				-I$(PETSC_DIR)/include -I$(PETSC_DIR)/$(PETSC_ARCH)/include \
 				-I$(SLEPC_DIR)/include -I$(SLEPC_DIR)/$(PETSC_ARCH)/include \
 				-Iinc -I/usr/include \
@@ -35,7 +36,7 @@ CPPFLAGS =      -D__STDCPP_WANT_MATH_SPEC_FUNCS__ \
 #linker flags (directories)
 #LDFLAGS
 #linker libraries
-LDLIBS =-lm -pthread -lgsl -lgslcblas -lhdf5 -L$(SLEPC_DIR)/$(PETSC_ARCH)/lib -L$(PETSC_DIR)/$(PETSC_ARCH)/lib -lpetsc -lslepc
+LDLIBS =-lm -lOpenCL -pthread -lgsl -lgslcblas -lhdf5 -L$(SLEPC_DIR)/$(PETSC_ARCH)/lib -L$(PETSC_DIR)/$(PETSC_ARCH)/lib -lpetsc -lslepc
 #LDLIBS =-lm -lGL -lGLU -lglfw -lX11 -ldl -lfreetype -pthread -llapacke -lblas
 
 CC = $(PETSC_DIR)/$(PETSC_ARCH)/bin/mpicxx
