@@ -22,9 +22,9 @@ void Simulation::CheckSymmetry() {
 
     // ------------- laser symmetries ------------
     for (const auto& p : _pulses) {
-        _pol[maths::X] = p->polarization_vector.x || p->minor_polarization_vector.x;
-        _pol[maths::Y] = p->polarization_vector.y || p->minor_polarization_vector.y;
-        _pol[maths::Z] = p->polarization_vector.z || p->minor_polarization_vector.z;
+        _pol[maths::X] = p->polarization_vector.x || p->minor_polarization_vector.x || _pol[maths::X];
+        _pol[maths::Y] = p->polarization_vector.y || p->minor_polarization_vector.y || _pol[maths::Y];
+        _pol[maths::Z] = p->polarization_vector.z || p->minor_polarization_vector.z || _pol[maths::Z];
     }
     if (_pol[maths::X] || _pol[maths::Y])
         _laserAxial = false;

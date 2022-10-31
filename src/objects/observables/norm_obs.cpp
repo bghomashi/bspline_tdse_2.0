@@ -78,6 +78,7 @@ void NormObservable::Compute(int it) {
     Dot(_psi, _psi_temp, norm);
     if (_txtFile) {
         std::stringstream ss;
+        ss << std::setprecision(8) << std::scientific;
         ss << std::real(norm) << "\t" << std::imag(norm) << "\n";
         _txtFile->Write(ss.str().c_str());
     } else {

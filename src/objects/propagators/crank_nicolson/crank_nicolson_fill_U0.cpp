@@ -5,6 +5,7 @@
 #include "common/bspline/bspline.h"
 #include "common/system_state/system_state.h"
 
+
 using namespace std::complex_literals;
 using namespace tdse;
 using Maths = maths::Factory;
@@ -87,7 +88,9 @@ void CrankNicolson::FillU0(Matrix& U0) {
             }
         }
 
-        U0->AssembleBegin();
-        U0->AssembleEnd();
+
     }
+    U0->AssembleBegin();
+    U0->AssembleEnd();
+
 } 

@@ -8,6 +8,7 @@
 
 #include "common/file_io/io_hdf5.h"
 #include "common/file_io/io_ascii.h"
+#include "common/file_io/io_binary.h"
 #include <memory>
 
 namespace io {
@@ -21,6 +22,9 @@ namespace io {
 
         virtual ASCII OpenASCII(const std::string& filename, char mode);
         virtual void CloseASCII(ASCII& o);
+
+        virtual Binary OpenBinary(const std::string& filename, char mode);
+        virtual void CloseBinary(Binary& o);
     };
     class Factory {
     public:
@@ -32,6 +36,9 @@ namespace io {
 
         static ASCII OpenASCII(const std::string& filename, char mode);
         static void CloseASCII(ASCII& o);
+
+        static Binary OpenBinary(const std::string& filename, char mode);
+        static void CloseBinary(Binary& o);
 
         static void SetInstance(IFactory* factory);
     };

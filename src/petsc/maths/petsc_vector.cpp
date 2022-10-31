@@ -91,7 +91,8 @@ void PetscVector::Concatenate(const std::vector<Vector>& vecs) {
 }
 void PetscVector::CopyTo(std::vector<complex>& values) {
     PetscMPIInt rank;
-    values.resize(_len);
+
+    PetscBarrier(PETSC_NULL);
 
     if (_petsc_ctx == 0) 
         CreateScatter();
@@ -101,6 +102,7 @@ void PetscVector::CopyTo(std::vector<complex>& values) {
     
     PetscErrorCode ierr = MPI_Comm_rank(PETSC_COMM_WORLD, &rank); PETSCASSERT(ierr);
     if (rank == 0) {
+        values.resize(_len);
         complex* ptr;
         ScatterGetArray(&ptr);
 

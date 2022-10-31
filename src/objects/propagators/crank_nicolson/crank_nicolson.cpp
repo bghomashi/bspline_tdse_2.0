@@ -16,6 +16,7 @@
 #include "common/bspline/bspline.h"
 #include "common/system_state/system_state.h"
 
+#include "petsc/maths/petsc_common.h"
 
 using namespace std::complex_literals;
 using namespace tdse;
@@ -155,11 +156,18 @@ bool CrankNicolson::DoStep(int it) {
 
     for (int xn = X; xn <= Z; xn++) {
         if (_HI[xn]) {
+            // AXPY(_Up, 0.5i*_dt*(-1.i), _HI[xn]);
+            // AXPY(_Um, -0.5i*_dt*(-1.i), _HI[xn]);
             AXPY(_Up, 0.5i*_dt*(-1.i*fields[xn][it]), _HI[xn]);
             AXPY(_Um, -0.5i*_dt*(-1.i*fields[xn][it]), _HI[xn]);
         }
     }
     
+    _Um->AssembleBegin();
+    _Um->AssembleEnd();
+    // MatView(std::dynamic_pointer_cast<PetscMatrix>(_Um)->_petsc_mat, 0); exit(0);
+
+
     Mult(_Um, psi, _psi_temp);
     if (!_solver->Solve(_Up, _psi_temp, psi)) {
         std::cout << "divergence!" << std::endl;

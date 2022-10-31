@@ -1,0 +1,123 @@
+{
+    "math_library": "PETsc",
+    "propagator": {
+        "type" : "crank_nicolson",
+        "time_step" : 0.1,
+        "checkpoint" : 5000,
+        "restart" : false,
+        "do_propagate" : true
+    },
+    "basis": {
+        "order": 3,
+        "node_sequence": "linear",
+        "parameter": 30,
+        "num_nodes": 500,
+        "x_min": 0.0,
+        "x_max": 10.0,
+        "lmax": 100,
+        "mmax": 0,
+        "ecs_r0": 1.0
+    },
+    "lasers": [
+        {
+            "num_cycles": 1.0,
+            "cycles_delay": 0.0,
+            "envelope": "sin2",
+            "intensity": 0,
+            "wavelength": 800.0,
+            "cep": 0,
+            "polarization_vector": [
+               	0.0,
+                0.0,
+                1.0
+            ],
+            "poynting_vector": [
+                1.0,
+                0.0,
+                0.0
+            ]
+        }
+    ],
+    "initial_state": [
+        {
+            "n": 1,
+            "l": 0,
+            "m": 0,
+            "phase": 0
+        }
+    ],
+    "potentials": [
+        {
+            "type": "coulomb",
+            "Z": 1
+        }
+    ],
+    "observables": {
+        "norm": {
+            "compute_period": 1,
+            "filename" : "norm.txt"
+        },
+        "dipole": {
+            "filename" : "dipole.txt"
+        },
+        "dipole_acc": {
+            "filename" : "dip_acc.txt"
+        },
+        "populations": {
+            "filename" : "populations.txt"
+        },
+        "pulse": {
+            "filename" : "pulse.txt"
+        },
+        "potential": {
+            "grid_points" : 1000,
+            "filename" : "potential.txt"
+        },
+	    "ionization": {
+            "filename" : "ionization.txt" 
+	}
+    },
+    "eigen_state": {
+        "solver": "SLEPC",
+        "tol": 1e-10,
+        "problem_type": "GHEP",
+        "filename": "yukawa.h5",
+        "bound": {
+            "nmax": 1
+        },
+        "continuum": {
+            "nmax": 400,
+            "lmax": 10,
+            "normalization" : "asymp"
+        }
+    },
+    "ionization": {
+        "angularly_resolved": {
+            "filename" : "angularly-resolved.txt",
+            "x" : {
+                "min": -2,
+                "max": 2,
+                "step": 0.05
+            },
+            "z" : {
+                "min": -2,
+                "max": 2,
+                "step": 0.05
+            },
+            "energy" : {
+                "min" : 0.004,
+                "max" : 1.0,
+                "step" : 0.05
+            }
+        },
+        "energy_resolved": {
+            "filename" : "energy-resolved.txt",
+            "energy" : {
+                "min" : 0.004,
+                "max" : 1.0,
+                "step" : 0.01
+            }
+        }
+    },
+    "log_filename": "log.txt"
+}

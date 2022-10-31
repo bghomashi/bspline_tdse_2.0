@@ -4,6 +4,8 @@
 #include "common/tdse/simulation.h"
 #include "common/bspline/bspline.h"
 
+#include "petsc/maths/petsc_common.h"
+
 using namespace std::complex_literals;
 using namespace tdse;
 using Maths = maths::Factory;
@@ -29,4 +31,7 @@ void CrankNicolson::FillOverlap(Matrix& S) {
 
         return overlapStore[i + j*N];
     });
+
+    // MatView(std::dynamic_pointer_cast<PetscMatrix>(S)->_petsc_mat, 0); exit(0);
+
 }

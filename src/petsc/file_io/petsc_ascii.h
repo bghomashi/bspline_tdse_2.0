@@ -1,5 +1,5 @@
-#ifndef __PETSC_ASCI_H__
-#define __PETSC_ASCI_H__
+#ifndef __PETSC_ASCII_H__
+#define __PETSC_ASCII_H__
 
 // class:       PetscASCII
 // description: concrete implementation the "io_ascii" interface. Used the petsc/mpi

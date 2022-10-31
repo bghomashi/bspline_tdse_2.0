@@ -7,6 +7,8 @@
 #include "common/system_state/system_state.h"
 #include "common/utility/banded_matrix.h"
 
+#include "petsc/maths/petsc_common.h"
+
 using namespace std::complex_literals;
 using namespace tdse;
 using Maths = maths::Factory;
@@ -79,4 +81,6 @@ void CrankNicolson::FillInteractionZ(Matrix& HI) {
 
     HI->AssembleBegin();
     HI->AssembleEnd();
+    
+    // MatView(std::dynamic_pointer_cast<PetscMatrix>(HI)->_petsc_mat, 0); exit(0);
 }

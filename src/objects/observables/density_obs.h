@@ -3,13 +3,14 @@
 
 #include <string>
 #include "common/objects/observable.h"
-#include "common/file_io/io_ascii.h"
+#include "common/file_io/io_binary.h"
 
 // this while output the 3D density in cartesian coordinates. Use responsibly
 class DensityObservable : public tdse::Observable::Register<DensityObservable> {
-    io::ASCII _txt_file;
+    io::Binary _bin_file;
 
     int _numGrid;
+    double _xmin, _xmax;
     std::vector<double> _grid;
 public:
     DensityObservable();

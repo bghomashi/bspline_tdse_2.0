@@ -93,6 +93,7 @@ maths::complex BSpline::FunctionEvaluate(double x, const std::vector<maths::comp
     if (i < 0 || i > _nodes - 2) return 0.;			// if it is outside the grid return 0
 
     Bsmi = 0;
+    Bsma = _numBSplines;
     nskip = 0;
 
     if (_skipFirst) {
@@ -100,8 +101,12 @@ maths::complex BSpline::FunctionEvaluate(double x, const std::vector<maths::comp
         nskip = 1;
     }
 
+    if (_skipLast) {
+        Bsma = _numBSplines-1;
+    }
+
     Bsmi = std::max(Bsmi, i);
-    Bsma = std::min(_numBSplines, i + _order);
+    Bsma = std::min(Bsma, i + _order);
 
     for (int Bs = Bsmi; Bs < Bsma; Bs++) {
         if (Bs - nskip >= fc.size())                   // BUGFIX:: I think this ONLY happens if we are skipping the LAST spline??

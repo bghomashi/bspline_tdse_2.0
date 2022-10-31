@@ -19,6 +19,16 @@ ASCII IFactory::OpenASCII(const std::string& filename, char mode) {
 void IFactory::CloseASCII(ASCII& o) {
     o = nullptr;
 }
+Binary IFactory::OpenBinary(const std::string& filename, char mode) {
+    auto file = new IBinary();
+    if (!file->Open(filename, mode))
+        return nullptr;
+    return Binary(file);
+}
+void IFactory::CloseBinary(Binary& o) {
+    o = nullptr;
+}
+
 
 
 bool Factory::Startup() {
@@ -40,6 +50,13 @@ ASCII Factory::OpenASCII(const std::string& filename, char mode) {
 }
 void Factory::CloseASCII(ASCII& o) {
     s_instance->CloseASCII(o);
+}
+
+Binary Factory::OpenBinary(const std::string& filename, char mode) {
+    return s_instance->OpenBinary(filename, mode);
+}
+void Factory::CloseBinary(Binary& o) {
+    s_instance->CloseBinary(o);
 }
 
 void Factory::SetInstance(IFactory* factory) {
